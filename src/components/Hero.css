@@ -1,3 +1,11 @@
 .Hero {
-  padding: 225px 0;
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+.hero-card {
+  padding: 25px;
+  width: fit-content;
+
+  background-color: rgba(0, 0, 0, 0.15);
 }

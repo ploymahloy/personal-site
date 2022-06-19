@@ -1,0 +1,4 @@
+.card-image-top.true {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}

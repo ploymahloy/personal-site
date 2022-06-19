@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
 	return (
-		<div className="Hero container text-secondary col-xxl-8 px-4">
+		<div className="Hero container text-white col-xxl-8 px-4">
 			<div className="row flex-lg-row-reverse align-items-center g-5 py-5">
 				<div className="col-10 col-sm-8 col-lg-6">
 					{/* <img
@@ -15,7 +15,7 @@ const Hero = () => {
 					/> */}
 				</div>
 				<div className="col-lg-6">
-					<h1 className="display-5 text-white fw-bold lh-1 mb-3">
+					<h1 className="display-5 fw-bold lh-1 mb-3">
 						Hi, I'm Patrick
 					</h1>
 					<p className="lead">

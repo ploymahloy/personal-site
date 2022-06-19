@@ -5,7 +5,7 @@ import './Card.css';
 export default function Card({ description, img, title }) {
 	return (
 		<div className="col mb-4">
-			<div className="card-body bg-white border">
+			<div className="card-body border transparent">
         <img
 					className="card-img-top border-bottom border-white"
 					src={img}

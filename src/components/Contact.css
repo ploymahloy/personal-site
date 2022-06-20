@@ -12,12 +12,22 @@
   border-radius: 8px;
 }
 
-.fa-5x {
+.fa-solid, .fa-brands {
   padding: 10px;
   color: white;
 }
 
-.fa-5x:hover {
+.fa-solid:hover, .fa-brands:hover {
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 390px) {
+.contact-card.mx-auto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+  }
+
 }

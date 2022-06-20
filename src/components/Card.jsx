@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Card.css';
 
-export default function Card({ description, img, title }) {
+export default function Card({ description, githubLink, img, title }) {
 	return (
 		<div className="col mb-4">
 			<div className="card-body bg-white">
@@ -17,8 +17,8 @@ export default function Card({ description, img, title }) {
 					<a href="..." className="btn btn-outline-dark w-100 m-1">
 						Live
 					</a>
-					<a href="..." className="btn btn-outline-dark w-100 m-1">
-						Github
+					<a href={githubLink} className="btn btn-outline-dark w-100 m-1">
+						Source
 					</a>
 				</div>
 			</div>

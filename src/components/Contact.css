@@ -1,0 +1,23 @@
+.Contact {
+  padding-top: 190px;
+  padding-bottom: 260px;
+}
+
+.contact-card {
+  padding: 25px;
+  width: fit-content;
+  
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.fa-5x {
+  padding: 10px;
+  color: white;
+}
+
+.fa-5x:hover {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,3 +1,4 @@
+import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 
@@ -8,6 +9,7 @@ function App() {
 		<div className="App">
       <Hero />
       <Projects />
+      <Contact />
 		</div>
 	);
 }

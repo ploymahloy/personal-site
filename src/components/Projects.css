@@ -1,3 +1,10 @@
+.Projects {
+  padding: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 .card-image-top.true {
   filter: blur(8px);
   -webkit-filter: blur(8px);

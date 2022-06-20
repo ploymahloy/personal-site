@@ -14,8 +14,8 @@ const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 const Projects = () => {
 	return (
-		<div className="container">
-			<h1 className="display-5 text-white fw-bold lh-1 mb-3">Projects</h1>
+		<div className="Projects container">
+			<h2 className="display-5 text-white fw-bold lh-1 mb-3">Projects</h2>
 			<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 				<Card
           img={fbc}

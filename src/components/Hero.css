@@ -1,13 +1,45 @@
-.Hero {
-  padding-top: 200px;
-  padding-bottom: 300px;
+.hero-container {
+	padding-top: 160px;
+	padding-bottom: 300px;
 }
 
 .hero-card {
-  padding: 25px;
-  width: fit-content;
-  
-  border: 1px solid white;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.35);
+	margin: 0 auto;
+	padding: 25px;
+	width: fit-content;
+
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 8px;
+}
+
+p {
+	font-size: 24px;
+}
+
+.hero-btns {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.hero-btn {
+	margin-right: 15px;
+	padding: 15px;
+
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	background: transparent;
+}
+
+.hero-btn:hover {
+	background-color: rgba(255, 255, 255, 0.4);
 }

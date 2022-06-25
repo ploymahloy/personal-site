@@ -1,13 +1,14 @@
-.Projects {
+.projects-container {
+  margin: 0 auto;
+  width: 80%;
   padding: 25px;
   border: 1px solid white;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.img-card {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.projects-card-title {
+  font-size: 40px;
+  margin-top: 8px;
 }
+

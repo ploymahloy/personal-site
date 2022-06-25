@@ -1,4 +1,7 @@
 .App {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 	background-image: url('https://images.unsplash.com/photo-1602343412893-acc15be8c62c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80');
 	background-position: center center;
 	background-repeat: no-repeat;

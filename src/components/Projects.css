@@ -5,7 +5,9 @@
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.card-image-top.true {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+.img-card {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

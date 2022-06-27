@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Card.css';
+import classes from './Card.module.css';
 
 export default function Card({ color, link, text }) {
 	return (
@@ -8,7 +8,11 @@ export default function Card({ color, link, text }) {
 			<a
         href={link}
         alt=""
+<<<<<<< HEAD
+				className={`${classes.card_link} display-5 text-white mb-3 p-5`}
+=======
 				className="project-card-link"
+>>>>>>> 3a47de4b992633dfbd15f950d263c03b967b037f
         style={{ backgroundColor: `${color}` }}
 			>
 				{text}

@@ -1,0 +1,11 @@
+.Projects {
+	padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.projects_card {
+  padding: 25px;
+	border: 1px solid white;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.35);
+}

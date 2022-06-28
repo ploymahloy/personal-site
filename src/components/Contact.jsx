@@ -8,7 +8,6 @@ const emailHref = `mailto:patrick.mahloy@gmail.com?subject=Offer%20From%20[Your%
 
 export default function Contact() {
 	return (
-<<<<<<< HEAD
 		<div
 			className={`${classes.Contact} container text-white col-xxl-8 px-4`}
 			id="Contact"
@@ -29,27 +28,6 @@ export default function Contact() {
 					<button>
 						<i className="fa-brands fa-linkedin-in fa-5x" />
 					</button>
-=======
-		<div className="contact-container" id="Contact">
-			<div className="contact-card">
-				<h2 className="contact-card-title">Contact</h2>
-				<a type="button" href={emailHref} className="contact-btn">
-					<i className="fa-solid fa-envelope fa-5x" />
-				</a>
-				<a
-					type="button"
-					href="https://github.com/ploymahloy"
-					className="contact-btn"
-				>
-					<i className="fa-brands fa-github fa-5x" />
-				</a>
-				<a
-					type="button"
-					href="https://www.linkedin.com/in/patrickmahloy"
-					className="contact-btn"
-				>
-					<i className="fa-brands fa-linkedin-in fa-5x" />
->>>>>>> 3a47de4b992633dfbd15f950d263c03b967b037f
 				</a>
 			</div>
 		</div>

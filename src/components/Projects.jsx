@@ -25,9 +25,9 @@ const Projects = () => {
 						link="https://github.com/ploymahloy/cli-calculator"
 					/>
 					<Card
-						text="Budget Tracker"
+						text="Fitness Tracker"
 						color="rgb(151, 165, 163)"
-						link="https://github.com/ploymahloy/budget-app"
+						link="https://fitness-tracker-mahloy.herokuapp.com/"
 					/>
 				</div>
 			</div>

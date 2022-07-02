@@ -1,7 +1,7 @@
 {
-  "homepage": "https://ploymahloy.github.io/personal-site/",
   "name": "personal-site",
   "version": "0.1.0",
+  "homepage": "https://ploymahloy.github.io/personal-site",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

@@ -1,11 +1,18 @@
 .Projects {
 	padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 300px;
 }
 
 .projects_card {
   padding: 25px;
-	border: 1px solid white;
+  width: 65%;
+	border: 1px solid white; 
 	border-radius: 8px;
 	background-color: rgba(0, 0, 0, 0.35);
+}
+
+@media only screen and (max-width: 768px) {
+  .projects_card {
+    width: 75%;
+  }
 }

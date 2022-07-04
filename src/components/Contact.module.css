@@ -41,7 +41,19 @@ button:hover {
   border-radius: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .Contact {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
+  .Contact {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
 	a {
 		display: flex;
 		align-items: center;

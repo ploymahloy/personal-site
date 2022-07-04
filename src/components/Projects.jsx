@@ -15,6 +15,11 @@ const Projects = () => {
 						link="https://github.com/ploymahloy/construction-work-orders"
 					/>
 					<Card
+						text="Fitness Tracker"
+						color="rgb(151, 165, 163)"
+						link="https://github.com/ploymahloy/Fitness-Tracker"
+					/>
+					<Card
 						text="Dictionary App"
 						color="rgb(220, 135, 73)"
 						link="https://github.com/ploymahloy/dictionaryapi"
@@ -23,11 +28,6 @@ const Projects = () => {
 						text="CLI Calculator"
 						color="rgb(243, 170, 72)"
 						link="https://github.com/ploymahloy/cli-calculator"
-					/>
-					<Card
-						text="Fitness Tracker"
-						color="rgb(151, 165, 163)"
-						link="https://github.com/ploymahloy/Fitness-Tracker"
 					/>
 				</div>
 			</div>

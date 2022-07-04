@@ -27,7 +27,7 @@ const Projects = () => {
 					<Card
 						text="Fitness Tracker"
 						color="rgb(151, 165, 163)"
-						link="https://fitness-tracker-mahloy.herokuapp.com/"
+						link="https://github.com/ploymahloy/Fitness-Tracker"
 					/>
 				</div>
 			</div>

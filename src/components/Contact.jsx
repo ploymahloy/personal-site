@@ -9,11 +9,11 @@ const emailHref = `mailto:patrick.mahloy@gmail.com?subject=Offer%20From%20[Your%
 export default function Contact() {
 	return (
 		<div
-			className={`${classes.Contact} container text-white col-xxl-8 px-4`}
+			className={`${classes.Contact} container text-center text-white col-xxl-8 px-0`}
 			id="Contact"
 		>
 			<div className={`${classes.contact_card} mx-auto`}>
-				<h2 className="display-5 fw-bold lh-1 mb-3">Contact</h2>
+				<h2 className="display-5 fw-bold lh-1 m-3">Contact</h2>
 				<a href={emailHref}>
 					<button>
 						<i className="fa-solid fa-envelope fa-5x" />

@@ -7,9 +7,9 @@ import './App.css';
 function App() {
 	return (
 		<div className="App">
-      <Hero />
-      <Projects />
-      <Contact />
+			<Hero />
+			<Projects />
+			<Contact />
 		</div>
 	);
 }

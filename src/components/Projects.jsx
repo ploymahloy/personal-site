@@ -6,7 +6,7 @@ import classes from './Projects.module.css';
 const Projects = () => {
 	return (
 		<div className={classes.Projects} id="Projects">
-      <div className={`${classes.projects_card} container`}>
+			<div className={`${classes.projects_card} container`}>
 				<h2 className="display-5 text-white fw-bold lh-1 mb-3">Projects</h2>
 				<div className="row row-cols-1 row-cols-md-2">
 					<Card

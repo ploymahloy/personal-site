@@ -15,9 +15,9 @@ const Projects = () => {
 						link="https://github.com/ploymahloy/construction-work-orders"
 					/>
 					<Card
-						text="Fitness Tracker"
+						text="All Access Clone"
 						color="rgb(151, 165, 163)"
-						link="https://github.com/ploymahloy/Fitness-Tracker"
+						link="https://github.com/ploymahloy/all-access-clone"
 					/>
 					<Card
 						text="Dictionary App"

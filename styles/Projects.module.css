@@ -1,0 +1,21 @@
+.left,
+.right {
+  display: flex;
+}
+
+.description {
+  align-self: flex-start;
+  outline: 1px solid yellow;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.buttons {
+  outline: 1px solid red;
+  align-self: flex-end;
+}
+
+
+.link_button {
+  margin: 0 auto;
+}

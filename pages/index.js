@@ -27,14 +27,24 @@ export default function Home() {
 
 			<Default>
 				<main className={styles.main}>
-					<p className={styles.bio}>
-						Hi, I'm Patrick. Welcome to my site! I am a web developer from Richmond, VA and a
-						university and bootcamp graduate. I have a background in music and am always looking for new bands to listen to. Recommendations are always welcome!
-					</p>
-					<div>
-						<div className={styles.split}>
-							<div className={styles.stack}>
-								<p>These are the technologies I use:</p>
+					<div className={styles.left}>
+						<fieldset className={styles.fieldset}>
+							<legend className={`${styles.legend} ${styles.legend_spiel}`}>
+								Spiel
+							</legend>
+							<p className={styles.bio}>
+								Hi, I'm Patrick. Welcome to my site! I am a web developer from
+								Richmond, VA and a university and bootcamp graduate. I have a
+								background in music and a fan of tiny houses.
+							</p>
+						</fieldset>
+					</div>
+					<div className={styles.right}>
+						<fieldset className={styles.fieldset}>
+							<legend className={`${styles.legend} ${styles.legend_stack}`}>
+								Stack
+							</legend>
+							<p className={styles.stack}>
 								<SiHtml5 className={styles.stack_icon} />
 								<SiCss3 className={styles.stack_icon} />
 								<SiBootstrap className={styles.stack_icon} />
@@ -49,14 +59,8 @@ export default function Home() {
 								<FaNode className={styles.stack_icon} />
 								<SiMysql className={styles.stack_icon} />
 								<SiMongodb className={styles.stack_icon} />
-							</div>
-							<div className={styles.backdrop}>
-								<p className={styles.contact}>
-									Contact Work Phone: (804) 396-4584 Email:
-									patrick.mahloy@gmail.com
-								</p>
-							</div>
-						</div>
+							</p>
+						</fieldset>
 					</div>
 				</main>
 			</Default>

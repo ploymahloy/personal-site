@@ -8,8 +8,8 @@ const Default = ({ children }) => {
 		<div>
 			<ul className={styles.menu}>
 				<span className={styles.left}>
-					<li className={styles.menu_underlay}>
-						<a href="/" className={styles.link}>
+					<li className={`${styles.menu_underlay} ${styles.logo_underlay}`}>
+						<a href="/" className={`${styles.link} ${styles.logo}`}>
 							Patrick Mahloy
 						</a>
 					</li>
@@ -24,12 +24,17 @@ const Default = ({ children }) => {
 							Projects
 						</a>
 					</li>
+					<li className={styles.menu_underlay}>
+						<a href="#" className={styles.link}>
+							Resume
+						</a>
+					</li>
 					<li
 						className={styles.menu_underlay}
 						id={styles.underlay_no_margin_right}
 					>
-						<a href="#" className={styles.link}>
-							Resume
+						<a href="/contact" className={styles.link}>
+							Contact
 						</a>
 					</li>
 				</span>

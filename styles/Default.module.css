@@ -1,33 +1,17 @@
 .menu {
 	display: flex;
 	justify-content: space-between;
-	padding: 1rem 0;
+  margin-bottom: 0;
+	padding: 1rem 0 0;
 
 	text-align: right;
 	list-style: none;
 }
 
-.icon_underlay {
-	display: none;
-}
-
-.menu_icon {
-	font-size: 32px;
-  color: black
-}
-
-.menu_icon:hover {
-  color: rgb(0, 204, 255);
-}
-
-.right {
-	width: fit-content;
-}
-
 .menu_underlay {
 	display: inline-block;
-	margin: 20px;
-	height: 24px;
+	margin: 12px;
+	height: 20px;
 
 	border: none;
 	background-color: rgb(0, 165, 206);
@@ -47,15 +31,24 @@
 	color: rgb(0, 204, 255);
 }
 
+.logo_underlay {
+  height: 32px;
+}
+
+.icon_underlay {
+	display: none;
+}
+
 .link {
 	display: block;
 	position: relative;
-	top: -10px;
+	top: -14px;
 	left: -20px;
 
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
+  font-family: Permanent Marker;
 	font-size: 24px;
 	font-weight: 900;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
@@ -64,10 +57,39 @@
 	background-color: transparent;
 }
 
-@media (max-width: 768px) {
+.logo {
+  font-size: 42px;
+
+	top: -26px;
+	left: -20px; 
+} 
+
+.menu_icon {
+	font-size: 32px;
+  color: black
+}
+
+.menu_icon:hover {
+  color: rgb(0, 204, 255);
+}
+
+.right {
+	width: fit-content;
+}
+
+@media (max-width: 900px) {
 	.right {
 		display: none;
 	}
+
+  .logo {
+		font-size: 32px;
+    top: -18px
+	}
+
+  .menu_underlay {
+    height: 28px;
+  }
 
 	.icon_underlay {
 		display: flex;
@@ -75,12 +97,13 @@
 	}
 }
 
-@media (max-width: 400px) {
-	.link {
-		font-size: 18px;
+@media (max-width: 420px) {
+	.logo {
+		font-size: 20px;
+    top: -12px
 	}
 
   .menu_underlay {
-    height: 14px;
+    height: 20px;
   }
 }

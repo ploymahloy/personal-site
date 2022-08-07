@@ -5,9 +5,9 @@ import styles from '../styles/Default.module.scss';
 
 const Default = ({ children }) => {
 	return (
-		<div>
+		<>
 			<ul className={styles.menu}>
-				<span className={styles.left}>
+				<span>
 					<li className={`${styles.menu_underlay} ${styles.logo_underlay}`}>
 						<a href="/" className={`${styles.link} ${styles.logo}`}>
 							Patrick Mahloy
@@ -40,7 +40,7 @@ const Default = ({ children }) => {
 				</span>
 			</ul>
 			{children}
-		</div>
+		</>
 	);
 };
 

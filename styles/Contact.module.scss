@@ -1,0 +1,73 @@
+@import './colors.scss';
+
+.fieldset {
+	text-align: left;
+	border-color: black;
+	border-style: solid;
+	box-shadow: -10px 10px $primary-blue;
+}
+
+.legend {
+	font-family: Permanent Marker;
+	font-size: 3em;
+	transform: rotate(-5deg);
+}
+
+.form {
+	margin: 0 auto;
+	margin-bottom: 2.5rem;
+	padding: 2rem 3rem;
+}
+
+.input,
+.textarea {
+	margin-bottom: 10px;
+	display: block;
+	width: 325px;
+}
+
+.input,
+.textarea,
+.button {
+	font-size: 20px;
+}
+
+.input {
+	align-self: center;
+}
+
+.textarea {
+	width: 100%;
+	height: 10rem;
+	font-family: Arial;
+}
+
+.button {
+	padding: 10px 20px;
+	border: none;
+  outline: none;
+	border-radius: 10px;
+	background-color: $primary-blue;
+}
+
+.button:focus,
+.button:hover {
+	color: white;
+	background-color: $hover-blue;
+}
+
+@media (max-width: 768px) {
+	.form {
+		padding: 2rem 2.5rem;
+	}
+}
+
+@media (max-width: 481px) {
+	.form {
+		padding: 2rem 1rem;
+	}
+
+	.input {
+		width: 100%;
+	}
+}

@@ -1,7 +1,9 @@
 import { useRef } from 'react';
 import Head from 'next/head';
 import emailjs from 'emailjs-com';
+
 import Default from '../layouts/Default';
+import styles from '../styles/Contact.module.scss';
 
 export default function ContactUs() {
 	const form = useRef();
@@ -10,18 +12,13 @@ export default function ContactUs() {
 		e.preventDefault();
 
 		emailjs
-			.sendForm(
-				'gmail',
-				'template_a',
-				form.current,
-				'_iYWkac8R892UoUAV'
-			)
+			.sendForm('gmail', 'template_a', form.current, '_iYWkac8R892UoUAV')
 			.then(
-				(result) => {
-					console.log(result.text);
+				(res) => {
+					alert(res.text);
 				},
 				(error) => {
-					console.log(error.text);
+					alert(error.text);
 				}
 			);
 	};
@@ -34,20 +31,41 @@ export default function ContactUs() {
 				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<Default>
-				<form ref={form} onSubmit={sendEmail}>
-					<label>Name</label>
-					<input required type="text" name="name" />
-					<label>Company</label>
-					<input required type="text" name="company" />
-					<label>Email</label>
-          <input required type="email" name="email" />
-          <label>Subject</label>
-					<input required type="text" name="subject" />
-					<label>Message</label>
-					<textarea required name="message" />
-					<input type="submit" value="Send" />
-				</form>
+				<fieldset className={styles.fieldset}>
+					<legend className={styles.legend}>Contact</legend>
+					<form ref={form} onSubmit={sendEmail} className={styles.form}>
+						<div>
+							<input
+								required
+								type="text"
+                name="name"
+                placeholder="Name"
+								className={styles.input}
+							/>
+							<input
+								required
+								type="text"
+                name="company"
+                placeholder="Company"
+								className={styles.input}
+							/>
+						</div>
+						<div>
+							<input
+								required
+								type="email"
+                name="email"
+                placeholder="Email"
+								className={styles.input}
+							/>
+						</div>
+						<div>
+							<textarea required name="message" placeholder="Message" className={styles.textarea} />
+						</div>
+						<input type="submit" value="Send" className={styles.button} />
+					</form>
+				</fieldset>
 			</Default>
 		</>
 	);
-};
+}

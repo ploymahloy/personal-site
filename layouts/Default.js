@@ -15,8 +15,8 @@ const Default = ({ children }) => {
 					</li>
 				</span>
 
-				<a href="#" className={styles.icon_underlay}>
-					<TiThMenu className={styles.menu_icon} />
+				<a href="#" className={styles.menu_icon} >
+					<TiThMenu />
 				</a>
 				<span className={styles.right}>
 					<li className={styles.menu_underlay}>

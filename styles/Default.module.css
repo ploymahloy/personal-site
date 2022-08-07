@@ -35,10 +35,6 @@
   height: 32px;
 }
 
-.icon_underlay {
-	display: none;
-}
-
 .link {
 	display: block;
 	position: relative;
@@ -58,15 +54,15 @@
 }
 
 .logo {
-  font-size: 42px;
-
-	top: -26px;
+  top: -26px;
 	left: -20px; 
+  font-size: 42px;
 } 
 
 .menu_icon {
+  display: none;
+  color: black;
 	font-size: 32px;
-  color: black
 }
 
 .menu_icon:hover {
@@ -91,19 +87,24 @@
     height: 28px;
   }
 
-	.icon_underlay {
+	.menu_icon {
 		display: flex;
 		align-self: center;
+    line-height: 1px;
 	}
 }
 
 @media (max-width: 420px) {
 	.logo {
 		font-size: 20px;
-    top: -12px
+    top: -14px
 	}
 
   .menu_underlay {
-    height: 20px;
+    height: 15px;
+  }
+
+  .menu_icon {
+    font-size: 24px;
   }
 }

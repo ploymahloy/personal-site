@@ -1,7 +1,8 @@
+@import './colors';
+
 .main {
 	display: flex;
-	flex-direction: row;
-	overflow: hidden;
+  align-items: center;
 }
 
 .left,
@@ -14,7 +15,7 @@
 	text-align: left;
 	border-color: black;
 	border-style: solid;
-	box-shadow: -10px 10px rgb(0, 165, 206);
+	box-shadow: -10px 10px $primary-blue;
 }
 
 .legend {
@@ -25,7 +26,8 @@
 
 .bio {
 	margin: 1rem 2rem 3rem;
-	font-size: 18px;
+	font-size: 24px;
+  font-weight: 300;
 }
 
 .stack {
@@ -39,7 +41,7 @@
 	border-radius: 10px;
 	font-size: 72px;
 	color: white;
-	background-color: rgb(0, 165, 206);
+	background-color: $primary-blue;
 }
 
 @media (max-width: 920px) {
@@ -76,6 +78,10 @@
 }
 
 @media (max-width: 450px) {
+  .bio {
+    font-size: 18px
+  }
+
 	.stack_icon {
     margin: 2px;
 		font-size: 44px;

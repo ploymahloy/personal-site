@@ -14,7 +14,7 @@ import {
 } from 'react-icons/si';
 
 import Default from '../layouts/Default';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
 	return (
@@ -34,8 +34,7 @@ export default function Home() {
 							</legend>
 							<p className={styles.bio}>
 								Hi, I'm Patrick. Welcome to my site! I am a web developer from
-								Richmond, VA and a university and bootcamp graduate. I have a
-								background in music and a fan of tiny houses.
+								Richmond, VA and a university and bootcamp graduate. I aspire to build websites and webapps that are enjoyable to interact with.
 							</p>
 						</fieldset>
 					</div>

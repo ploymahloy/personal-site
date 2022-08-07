@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -14,7 +16,7 @@
 	height: 20px;
 
 	border: none;
-	background-color: rgb(0, 165, 206);
+	background-color: $primary-blue;
 	z-index: -1;
 }
 
@@ -23,12 +25,12 @@
 }
 
 .menu_underlay:hover {
-	outline: 2px solid rgb(0, 204, 255);
+	outline: 2px solid $hover-blue;
 	background-color: transparent;
 }
 
 .menu_underlay:hover .link {
-	color: rgb(0, 204, 255);
+	color: $hover-blue;
 }
 
 .logo_underlay {
@@ -63,10 +65,11 @@
   display: none;
   color: black;
 	font-size: 32px;
+  
 }
 
 .menu_icon:hover {
-  color: rgb(0, 204, 255);
+  color: $hover-blue;
 }
 
 .right {

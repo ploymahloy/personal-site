@@ -1,7 +1,7 @@
 import React from 'react';
 import { TiThMenu } from 'react-icons/ti';
 
-import styles from '../styles/Default.module.css';
+import styles from '../styles/Default.module.scss';
 
 const Default = ({ children }) => {
 	return (

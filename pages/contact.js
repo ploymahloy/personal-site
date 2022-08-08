@@ -33,37 +33,44 @@ export default function ContactUs() {
 			<Default>
 				<fieldset className={styles.fieldset}>
 					<legend className={styles.legend}>Contact</legend>
-					<form ref={form} onSubmit={sendEmail} className={styles.form}>
-						<div>
-							<input
-								required
-								type="text"
-                name="name"
-                placeholder="Name"
-								className={styles.input}
-							/>
-							<input
-								required
-								type="text"
-                name="company"
-                placeholder="Company"
-								className={styles.input}
-							/>
-						</div>
-						<div>
-							<input
-								required
-								type="email"
-                name="email"
-                placeholder="Email"
-								className={styles.input}
-							/>
-						</div>
-						<div>
-							<textarea required name="message" placeholder="Message" className={styles.textarea} />
-						</div>
-						<input type="submit" value="Send" className={styles.button} />
-					</form>
+					<div className={styles.wrapper}>
+						<form ref={form} onSubmit={sendEmail} className={styles.form}>
+							<div>
+								<input
+									required
+									type="text"
+									name="name"
+									placeholder="Name"
+									className={styles.input}
+								/>
+								<input
+									required
+									type="text"
+									name="company"
+									placeholder="Company"
+									className={styles.input}
+								/>
+							</div>
+							<div>
+								<input
+									required
+									type="email"
+									name="email"
+									placeholder="Email"
+									className={styles.input}
+								/>
+							</div>
+							<div>
+								<textarea
+									required
+									name="message"
+									placeholder="Message"
+									className={styles.textarea}
+								/>
+							</div>
+							<input type="submit" value="Send" className={styles.button} />
+						</form>
+					</div>
 				</fieldset>
 			</Default>
 		</>

@@ -1,6 +1,7 @@
 @import './colors.scss';
 
 .fieldset {
+  margin: 0 3rem 2rem;
 	text-align: left;
 	border-color: black;
 	border-style: solid;
@@ -8,34 +9,32 @@
 }
 
 .legend {
-  margin: 0 auto;
+	margin: 0 auto;
 	font-family: Permanent Marker;
 	font-size: 3em;
 }
 
-.form {
+.wrapper {
 	margin: 0 auto;
-	margin-bottom: 2.5rem;
-	padding: 2rem 3rem;
+	padding: 1.5rem 2rem;
 }
 
 .input,
 .textarea {
 	margin-bottom: 10px;
-	display: block;
-	width: 325px;
+	width: 33%;
 }
 
 .input,
 .textarea {
-  padding: 5px;
-  border: 2px solid black;
+	padding: 5px;
+	border: 2px solid black;
 	font-size: 20px;
-  box-shadow: -5px 5px $primary-blue;
+	box-shadow: -4px 4px $primary-blue;
 }
 
 .input {
-	align-self: center;
+	width: 60%;
 }
 
 .textarea {
@@ -46,13 +45,13 @@
 
 .button {
 	padding: 10px 20px;
-  width: 100%;
+	width: 100%;
 	border: none;
-  outline: none;
+	outline: none;
 	border-radius: 10px;
 	background-color: $primary-blue;
-  font-family: Permanent Marker;
-  font-size: 28px;
+	font-family: Permanent Marker;
+	font-size: 32px;
 }
 
 .button:focus,
@@ -65,14 +64,35 @@
 	.form {
 		padding: 2rem 2.5rem;
 	}
+
+	.input {
+		width: 75%;
+	}
 }
 
 @media (max-width: 481px) {
+	.fieldset {
+		margin: 0 1rem;
+	}
+
+	.legend {
+		font-size: 2rem;
+	}
+
 	.form {
 		padding: 2rem 1rem;
 	}
 
+	.input,
+	.textarea {
+		font-size: 18px;
+	}
+
 	.input {
 		width: 100%;
+	}
+
+	.button {
+		font-size: 24px;
 	}
 }

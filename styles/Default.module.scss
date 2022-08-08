@@ -3,8 +3,8 @@
 .menu {
 	display: flex;
 	justify-content: space-between;
-  margin-bottom: 0;
-	padding: 1rem 0 0;
+	margin: 1rem 1rem 0;
+	padding: 1rem 1rem 0;
 
 	text-align: right;
 	list-style: none;
@@ -34,7 +34,7 @@
 }
 
 .logo_underlay {
-  height: 32px;
+	height: 32px;
 }
 
 .link {
@@ -43,13 +43,13 @@
 	top: -14px;
 	left: -14px;
 
-  border: none;
-  outline: none;
+	border: none;
+	outline: none;
 
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
-  font-family: Permanent Marker;
+	font-family: Permanent Marker;
 	font-size: 24px;
 	font-weight: 900;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
@@ -59,24 +59,85 @@
 }
 
 .logo {
-  top: -26px;
-	left: -24px; 
-  font-size: 42px;
-} 
+	top: -26px;
+	left: -24px;
+	font-size: 42px;
+}
 
 .menu_icon {
-  display: none;
-  color: black;
+	display: none;
+	color: black;
 	font-size: 32px;
-  
+}
+
+.sidenav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	background-color: white;
+	box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+
+	&_menu {
+    margin: 20px;
+		padding: 0;
+		height: 100%;
+
+		list-style-type: none;
+		text-align: center;
+		font-size: 32px;
+
+		&_x {
+			margin: 15px;
+			color: white;
+			font-size: 54px;
+			color: black;
+		}
+
+		&_link {
+			font-family: Permanent Marker;
+		}
+
+		&_link:hover,
+		&_x:hover {
+			color: $hover-blue;
+		}
+	}
 }
 
 .menu_icon:hover {
-  color: $hover-blue;
+	color: $hover-blue;
 }
 
 .right {
 	width: fit-content;
+}
+
+.page_content {
+	margin-bottom: 75px;
+}
+
+.footer {
+	width: 100%;
+	background-color: $primary-blue;
+
+	&_icons {
+		margin: auto;
+		width: fit-content;
+		color: white;
+
+		.footer_icon {
+			display: inline-block;
+			margin: 15px 15px 0px;
+			text-align: center;
+			font-size: 56px;
+		}
+
+		.footer_icon:hover {
+			color: $hover-blue;
+		}
+	}
 }
 
 @media (max-width: 900px) {
@@ -84,33 +145,42 @@
 		display: none;
 	}
 
-  .logo {
+	.logo {
 		font-size: 32px;
-    top: -18px
+		top: -18px;
 	}
 
-  .menu_underlay {
-    height: 28px;
-  }
+	.menu_underlay {
+		height: 28px;
+	}
 
 	.menu_icon {
 		display: flex;
 		align-self: center;
-    line-height: 1px;
+		line-height: 1px;
+	}
+
+	.footer_icon {
+		font-size: 48px;
 	}
 }
 
-@media (max-width: 420px) {
-	.logo {
-		font-size: 20px;
-    top: -14px
+@media (max-width: 481px) {
+	.menu {
+		padding: 0;
 	}
 
-  .menu_underlay {
-    height: 15px;
-  }
+	.logo {
+		font-size: 20px;
+		top: -14px;
+		left: -10px;
+	}
 
-  .menu_icon {
-    font-size: 24px;
-  }
+	.menu_underlay {
+		height: 15px;
+	}
+
+	.menu_icon {
+		font-size: 24px;
+	}
 }

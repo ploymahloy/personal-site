@@ -26,16 +26,23 @@ export default function Projects() {
 								</legend>
 								<p className={styles.project_summary}>
 									This project was inspired by a web app I support for my
-									current role. I find it do be antiquated, and I wanted a
-									bigger project to work on so I challenged myself to recreate
-									it (minus the myriad bugs and quirks). My challenge was
-									learning how to x, y, z. I overcame these challenges by
-									implementing 1, 2, 3. The technologies used for this project
-									were <b>React, Tailwind</b>
+									current role. I wanted a bigger project to work on so I
+									challenged myself to recreate it while also hoping to improve
+									some of the quirks of the original UI. The technologies used
+									for this project are:{' '}
+									<p className={styles.project_summary_bold}>NextJS, Sass</p>
 								</p>
 								<div className={styles.button_wrapper}>
-									<button className={styles.button}>Demo</button>
-									<button className={styles.button}>Source</button>
+									<button className={styles.button}>
+										<a href="" target="_blank">
+											Demo
+										</a>
+									</button>
+									<button className={styles.button}>
+										<a href="" target="_blank">
+											Source
+										</a>
+									</button>
 								</div>
 							</fieldset>
 						</div>
@@ -47,17 +54,25 @@ export default function Projects() {
 									Project Organizer
 								</legend>
 								<p className={styles.project_summary}>
-									This project was inspired by a web app I support for my
-									current role. I find it do be antiquated, and I wanted a
-									bigger project to work on so I challenged myself to recreate
-									it (minus the myriad bugs and quirks). My challenge was
-									learning how to x, y, z. I overcame these challenges by
-									implementing 1, 2, 3. The technologies used for this project
-									were <b>React, Tailwind</b>
+									This web app is meant to assist users of a project-based
+									company better organize their projects by deadline and job
+									type. Users are also able to add new work orders as well. The
+									technologies used for this project are:{' '}
+									<p className={styles.project_summary_bold}>
+										React, Bootstrap
+									</p>
 								</p>
 								<div className={styles.button_wrapper}>
-									<button className={styles.button}>Demo</button>
-									<button className={styles.button}>Source</button>
+									<button className={styles.button}>
+										<a href="https://ploymahloy.github.io/project-organizer/" target="_blank">
+											Demo
+										</a>
+									</button>
+									<button className={styles.button}>
+										<a href="https://github.com/ploymahloy/project-organizer" target="_blank">
+											Source
+										</a>
+									</button>
 								</div>
 							</fieldset>
 						</div>
@@ -69,17 +84,22 @@ export default function Projects() {
 									Mortgage Calculator
 								</legend>
 								<p className={styles.project_summary}>
-									This project was inspired by a web app I support for my
-									current role. I find it do be antiquated, and I wanted a
-									bigger project to work on so I challenged myself to recreate
-									it (minus the myriad bugs and quirks). My challenge was
-									learning how to x, y, z. I overcame these challenges by
-									implementing 1, 2, 3. The technologies used for this project
-									were <b>React, Tailwind</b>
+									A very straightforward web app designed to calculate monthly
+									mortgage payments based on data input by the user. The
+									technologies used for this project are:{' '}
+									<p className={styles.project_summary_bold}>React</p>
 								</p>
 								<div className={styles.button_wrapper}>
-									<button className={styles.button}>Demo</button>
-									<button className={styles.button}>Source</button>
+									<button className={styles.button}>
+										<a href="https://ploymahloy.github.io/mortgage-calculator/" target="_blank">
+											Demo
+										</a>
+									</button>
+									<button className={styles.button}>
+										<a href="https://github.com/ploymahloy/mortgage-calculator" target="_blank">
+											Source
+										</a>
+									</button>
 								</div>
 							</fieldset>
 						</div>
@@ -97,11 +117,28 @@ export default function Projects() {
 									it (minus the myriad bugs and quirks). My challenge was
 									learning how to x, y, z. I overcame these challenges by
 									implementing 1, 2, 3. The technologies used for this project
-									were <b>React, Tailwind</b>
+									are:{' '}
+									<p className={styles.project_summary_bold}>
+										React Typescript
+									</p>
 								</p>
 								<div className={styles.button_wrapper}>
-									<button className={styles.button}>Demo</button>
-									<button className={styles.button}>Source</button>
+									<button className={styles.button}>
+										<a
+											href="https://ploymahloy.github.io/dictionary-app/"
+											target="_blank"
+										>
+											Demo
+										</a>
+									</button>
+									<button className={styles.button}>
+										<a
+											href="https://github.com/ploymahloy/dictionary-app"
+											target="_blank"
+										>
+											Source
+										</a>
+									</button>
 								</div>
 							</fieldset>
 						</div>
@@ -113,17 +150,25 @@ export default function Projects() {
 									CLI Calculator
 								</legend>
 								<p className={styles.project_summary}>
-									This project was inspired by a web app I support for my
-									current role. I find it do be antiquated, and I wanted a
-									bigger project to work on so I challenged myself to recreate
-									it (minus the myriad bugs and quirks). My challenge was
-									learning how to x, y, z. I overcame these challenges by
-									implementing 1, 2, 3. The technologies used for this project
-									were <b>React, Tailwind</b>
+									To break the mould of some of my other projects' workflow, I
+									made a command line application that function as a simple
+									calculator with a difficult personality. The technologies used
+									for this project are:{' '}
+									<p className={styles.project_summary_bold}>
+										Typescript, Node
+									</p>
 								</p>
 								<div className={styles.button_wrapper}>
-									<button className={styles.button}>Demo</button>
-									<button className={styles.button}>Source</button>
+									<button className={styles.button}>
+										<a href="https://www.youtube.com/watch?v=gUpLU6GX3XY" target="_blank">
+											Demo
+										</a>
+									</button>
+									<button className={styles.button}>
+										<a href="https://github.com/ploymahloy/cli-calculator" target="_blank">
+											Source
+										</a>
+									</button>
 								</div>
 							</fieldset>
 						</div>

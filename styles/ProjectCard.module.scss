@@ -1,0 +1,82 @@
+@import './colors.scss';
+
+.fieldset {
+	border-color: black;
+	border-style: solid;
+	text-align: left;
+	box-shadow: -10px 10px $primary-blue;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.project_summary_wrapper {
+  margin: 0 auto;
+	padding: 15px;
+	background-color: white;
+}
+
+.legend_project {
+	text-align: right;
+	font-family: Permanent Marker;
+	font-size: 2em;
+}
+
+.project_summary {
+	margin: 10px 10px 20px;
+	font-size: 18px;
+
+  &_bold {
+    display: inline;
+    font-weight: 800;
+  }
+}
+
+.button_wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.button {
+	margin: 0 5px 10px;
+	padding: 10px 20px;
+
+	border: none;
+	outline: none;
+	border-radius: 10px;
+
+	font-family: Permanent Marker;
+	font-size: 28px;
+	background-color: $primary-blue;
+}
+
+.button:focus,
+.button:hover {
+	color: white;
+	background-color: $hover-blue;
+}
+
+@media (max-width: 768px) {
+	.button_wrapper {
+		justify-content: space-around;
+	}
+
+	.button {
+		width: 49%;
+	}
+}
+
+@media (max-width: 481px) {
+	.legend_project,
+	.button {
+		font-size: 1.5rem;
+	}
+
+	.legend_project {
+		text-align: center;
+	}
+}

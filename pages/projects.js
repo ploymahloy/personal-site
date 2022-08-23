@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Default from '../layouts/Default';
 
+import Default from '../layouts/Default';
+import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Projects.module.scss';
 
 export default function Projects() {
@@ -18,161 +19,78 @@ export default function Projects() {
 			<Default>
 				<div className={styles.wrapper}>
 					<header className={styles.page_title}>Projects</header>
-					<div className={styles.row}>
-						<div className={styles.project_summary_wrapper}>
-							<fieldset className={styles.fieldset}>
-								<legend className={styles.legend_project}>
-									All Access Clone
-								</legend>
-								<p className={styles.project_summary}>
-									This project was inspired by a web app I support for my
-									current role. I wanted a bigger project to work on so I
-									challenged myself to recreate it while also hoping to improve
-									some of the quirks of the original UI. The technologies used
-									for this project are:{' '}
-									<p className={styles.project_summary_bold}>NextJS, Sass</p>
-								</p>
-								<div className={styles.button_wrapper}>
-									<button className={styles.button}>
-										<a href="" target="_blank">
-											Demo
-										</a>
-									</button>
-									<button className={styles.button}>
-										<a href="" target="_blank">
-											Source
-										</a>
-									</button>
-								</div>
-							</fieldset>
-						</div>
-					</div>
-					<div className={styles.row}>
-						<div className={styles.project_summary_wrapper}>
-							<fieldset className={styles.fieldset}>
-								<legend className={styles.legend_project}>
-									Project Organizer
-								</legend>
-								<p className={styles.project_summary}>
-									This web app is meant to assist users of a project-based
-									company better organize their projects by deadline and job
-									type. Users are also able to add new work orders as well. The
-									technologies used for this project are:{' '}
-									<p className={styles.project_summary_bold}>
-										React, Bootstrap
-									</p>
-								</p>
-								<div className={styles.button_wrapper}>
-									<button className={styles.button}>
-										<a href="https://ploymahloy.github.io/project-organizer/" target="_blank">
-											Demo
-										</a>
-									</button>
-									<button className={styles.button}>
-										<a href="https://github.com/ploymahloy/project-organizer" target="_blank">
-											Source
-										</a>
-									</button>
-								</div>
-							</fieldset>
-						</div>
-					</div>
-					<div className={styles.row}>
-						<div className={styles.project_summary_wrapper}>
-							<fieldset className={styles.fieldset}>
-								<legend className={styles.legend_project}>
-									Mortgage Calculator
-								</legend>
-								<p className={styles.project_summary}>
-									A very straightforward web app designed to calculate monthly
-									mortgage payments based on data input by the user. The
-									technologies used for this project are:{' '}
-									<p className={styles.project_summary_bold}>React</p>
-								</p>
-								<div className={styles.button_wrapper}>
-									<button className={styles.button}>
-										<a href="https://ploymahloy.github.io/mortgage-calculator/" target="_blank">
-											Demo
-										</a>
-									</button>
-									<button className={styles.button}>
-										<a href="https://github.com/ploymahloy/mortgage-calculator" target="_blank">
-											Source
-										</a>
-									</button>
-								</div>
-							</fieldset>
-						</div>
-					</div>
-					<div className={styles.row}>
-						<div className={styles.project_summary_wrapper}>
-							<fieldset className={styles.fieldset}>
-								<legend className={styles.legend_project}>
-									Dictionary App
-								</legend>
-								<p className={styles.project_summary}>
-									This project was inspired by a web app I support for my
-									current role. I find it do be antiquated, and I wanted a
-									bigger project to work on so I challenged myself to recreate
-									it (minus the myriad bugs and quirks). My challenge was
-									learning how to x, y, z. I overcame these challenges by
-									implementing 1, 2, 3. The technologies used for this project
-									are:{' '}
-									<p className={styles.project_summary_bold}>
-										React Typescript
-									</p>
-								</p>
-								<div className={styles.button_wrapper}>
-									<button className={styles.button}>
-										<a
-											href="https://ploymahloy.github.io/dictionary-app/"
-											target="_blank"
-										>
-											Demo
-										</a>
-									</button>
-									<button className={styles.button}>
-										<a
-											href="https://github.com/ploymahloy/dictionary-app"
-											target="_blank"
-										>
-											Source
-										</a>
-									</button>
-								</div>
-							</fieldset>
-						</div>
-					</div>
-					<div className={styles.row}>
-						<div className={styles.project_summary_wrapper}>
-							<fieldset className={styles.fieldset}>
-								<legend className={styles.legend_project}>
-									CLI Calculator
-								</legend>
-								<p className={styles.project_summary}>
-									To break the mould of some of my other projects' workflow, I
-									made a command line application that function as a simple
-									calculator with a difficult personality. The technologies used
-									for this project are:{' '}
-									<p className={styles.project_summary_bold}>
-										Typescript, Node
-									</p>
-								</p>
-								<div className={styles.button_wrapper}>
-									<button className={styles.button}>
-										<a href="https://www.youtube.com/watch?v=gUpLU6GX3XY" target="_blank">
-											Demo
-										</a>
-									</button>
-									<button className={styles.button}>
-										<a href="https://github.com/ploymahloy/cli-calculator" target="_blank">
-											Source
-										</a>
-									</button>
-								</div>
-							</fieldset>
-						</div>
-					</div>
+					{/* <ProjectCard
+						appSummary="This project was inspired by a web app I support for my
+            current role. I wanted a bigger project to work on so I
+            challenged myself to recreate it while also hoping to improve
+            some of the quirks of the original UI. The technologies used
+            for this project are:"
+						appTitle="All Access Clone"
+						linkDemo=""
+						linkSource=""
+						techStack="NextJS, Sass"
+					/> */}
+          <ProjectCard
+						appSummary="By far my favorite project to date, this web app acts as a virtual hit-maker. Program the drums, select instrument tracks to match, and press play! The
+            technologies used for this project are:"
+						appTitle="Song Maker"
+						linkDemo=""
+						linkSource=""
+						techStack="React"
+					/>
+          <ProjectCard
+						appSummary="In an attempt to become more familiar with NextJS, I wanted to apply preexiisting knowledge of responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page. The
+            technologies used for this project are:"
+						appTitle="Portfolio Template"
+						linkDemo=""
+						linkSource=""
+						techStack="NextJS, Sass"
+					/>
+					<ProjectCard
+						appSummary="This web app is meant to assist users of a project-based
+            company better organize their projects by deadline and job
+            type. Users are also able to add new work orders as well. The
+            technologies used for this project are:"
+						appTitle="Project Organizer"
+						linkDemo="https://ploymahloy.github.io/project-organizer/"
+						linkSource="https://github.com/ploymahloy/project-organizer"
+						techStack="React, Bootstrap"
+					/>
+					<ProjectCard
+						appSummary="A very straightforward web app designed to calculate monthly
+            mortgage payments based on data input by the user. The
+            technologies used for this project are:"
+						appTitle="Mortgage Calculator"
+						linkDemo="https://ploymahloy.github.io/mortgage-calculator/"
+						linkSource="https://github.com/ploymahloy/mortgage-calculator"
+						techStack="React"
+					/>
+					<ProjectCard
+						appSummary="Utilizing the Dictionary API, this simple app populates dictionary data (i.e. part of speech and definition) from user input. The technologies used for this project
+            are:"
+						appTitle="Dictionary App"
+						linkDemo="https://ploymahloy.github.io/dictionary-app/"
+						linkSource="https://github.com/ploymahloy/dictionary-app"
+						techStack="React Typescript"
+					/>
+					<ProjectCard
+						appSummary="To break the mould of some of my other projects' workflow, I
+            made a command line application that functions as a simple
+            calculator with a difficult personality. The technologies used
+            for this project are:"
+						appTitle="CLI Calculator"
+						linkDemo="https://www.youtube.com/watch?v=gUpLU6GX3XY"
+						linkSource="https://github.com/ploymahloy/cli-calculator"
+						techStack="Typescript, Node"
+					/>
+					<ProjectCard
+						appSummary="Everyone seems to have this project in their portfolio, and for good reason. It's great for beginners and introduces challenges that allow the developer to graduate to more complex issues. The technologies used
+            for this project are:"
+						appTitle="Basic Calculator"
+						linkDemo="https://ploymahloy.github.io/basic-calculator/"
+						linkSource="https://github.com/ploymahloy/basic-calculator"
+						techStack="JavaScript"
+					/>
 				</div>
 			</Default>
 		</>

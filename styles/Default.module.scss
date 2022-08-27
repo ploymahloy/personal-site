@@ -87,15 +87,17 @@
 		list-style-type: none;
 		text-align: center;
 		font-size: 32px;
-
+    
 		&_x {
-			margin: 15px;
+      margin: 15px;
 			color: white;
 			font-size: 54px;
 			color: black;
 		}
-
+    
 		&_link {
+      display: inline-block;
+      margin-bottom: 0.5rem;
 			font-family: Permanent Marker;
 		}
 
@@ -119,6 +121,8 @@
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
 	width: 100%;
 	background-color: $primary-blue;
 
@@ -129,9 +133,8 @@
 
 		.footer_icon {
 			display: inline-block;
-			margin: 15px 15px 0px;
-			text-align: center;
-			font-size: 56px;
+			margin: 8px 5px 0;
+			font-size: 32px;
 		}
 
 		.footer_icon:hover {

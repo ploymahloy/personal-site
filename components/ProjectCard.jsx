@@ -1,7 +1,7 @@
 import styles from '../styles/ProjectCard.module.scss';
 
 export default function Project(props) {
-  const { appSummary, appTitle, linkDemo, linkSource, techStack} = props;
+	const { appSummary, appTitle, linkDemo, linkSource, techStack } = props;
 
 	return (
 		<div className={styles.row}>
@@ -14,12 +14,12 @@ export default function Project(props) {
 					</p>
 					<div className={styles.button_wrapper}>
 						<button className={styles.button}>
-							<a href={linkDemo} target="_blank">
+							<a href={linkDemo} target="_blank" rel="noreferrer">
 								Demo
 							</a>
 						</button>
 						<button className={styles.button}>
-							<a href={linkSource} target="_blank">
+							<a href={linkSource} target="_blank" rel="noreferrer">
 								Source
 							</a>
 						</button>

@@ -33,10 +33,10 @@ export default function Home() {
 								Spiel
 							</legend>
 							<p className={styles.bio}>
-								Hi, I'm Patrick. Welcome to my site! I'm a web
+								{`Hi, I'm Patrick. Welcome to my site! I'm a web
                 developer and university/bootcamp graduate from Richmond, VA. I
 								aspire to build websites and webapps that are enjoyable to
-								interact with. What should we build together? 👨🏻‍💻
+								interact with. What should we build together? 👨🏻‍💻`}
 							</p>
 						</fieldset>
 					</div>

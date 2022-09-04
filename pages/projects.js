@@ -76,12 +76,19 @@ export default function Projects() {
 					<ProjectCard
 						appSummary="To break the mould of some of my other projects' workflow, I
             made a command line application that functions as a simple
-            calculator with a difficult personality. The technologies used
-            for this project are:"
+            calculator with a difficult personality. The
+            technologies used for this project are:"
 						appTitle="CLI Calculator"
 						linkDemo="https://www.youtube.com/watch?v=gUpLU6GX3XY"
 						linkSource="https://github.com/ploymahloy/cli-calculator"
 						techStack="Typescript, Node"
+					/>
+					<ProjectCard
+						appSummary="This CRUD app reads and writes notes in a JSON database stored in the front end. The Note Taker was built while attending U of R's coding bootcamp. The technologies used for this project are:"
+						appTitle="Note Taker"
+						linkDemo="https://note-taker-mahloy.herokuapp.com/"
+						linkSource="https://github.com/ploymahloy/note-taker"
+						techStack="Node"
 					/>
 					<ProjectCard
 						appSummary="Everyone seems to have this project in their portfolio, and for good reason. It's great for beginners and introduces challenges that allow the developer to graduate to more complex issues. The technologies used

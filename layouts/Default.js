@@ -3,6 +3,7 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 
 import styles from '../styles/Default.module.scss';
+import resume from '../public/resume.png';
 
 const Default = ({ children }) => {
 	const [isActive, setIsActive] = useState(false);
@@ -40,7 +41,7 @@ const Default = ({ children }) => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className={styles.sidenav_menu_link}>
+							<a href="https://www.linkedin.com/in/patrickmahloy/overlay/1635501141499/single-media-viewer/" target="_blank" className={styles.sidenav_menu_link}>
 								Resume
 							</a>
 						</li>
@@ -59,7 +60,7 @@ const Default = ({ children }) => {
 						</a>
 					</li>
 					<li className={styles.menu_underlay}>
-						<a href="#" className={styles.link}>
+						<a href="https://www.linkedin.com/in/patrickmahloy/overlay/1635501141499/single-media-viewer/" target="_blank" className={styles.link}>
 							Resume
 						</a>
 					</li>

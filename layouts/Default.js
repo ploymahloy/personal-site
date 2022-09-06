@@ -41,7 +41,7 @@ const Default = ({ children }) => {
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/patrickmahloy/overlay/1635501141499/single-media-viewer/" target="_blank" className={styles.sidenav_menu_link}>
+							<a href="https://www.linkedin.com/in/patrickmahloy/details/featured/" target="_blank" className={styles.sidenav_menu_link}>
 								Resume
 							</a>
 						</li>
@@ -60,7 +60,7 @@ const Default = ({ children }) => {
 						</a>
 					</li>
 					<li className={styles.menu_underlay}>
-						<a href="https://www.linkedin.com/in/patrickmahloy/overlay/1635501141499/single-media-viewer/" target="_blank" className={styles.link}>
+						<a href="https://www.linkedin.com/in/patrickmahloy/details/featured/" target="_blank" className={styles.link}>
 							Resume
 						</a>
 					</li>

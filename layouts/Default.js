@@ -3,20 +3,19 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 
 import styles from '../styles/Default.module.scss';
-import resume from '../public/resume.png';
 
 const Default = ({ children }) => {
-	const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
 	return (
 		<>
-			<ul className={styles.menu}>
+			<div className={styles.menu}>
 				<span>
-					<li className={`${styles.menu_underlay} ${styles.logo_underlay}`}>
+					<div className={`${styles.menu_underlay} ${styles.logo_underlay}`}>
 						<a href="/" className={`${styles.link} ${styles.logo}`}>
 							Patrick Mahloy
 						</a>
-					</li>
+					</div>
 				</span>
 
 				<a
@@ -30,50 +29,50 @@ const Default = ({ children }) => {
 					className={styles.sidenav}
 					style={{ display: isActive ? 'block' : 'none' }}
 				>
-					<ul className={styles.sidenav_menu}>
+					<div className={styles.sidenav_menu}>
 						<TiTimes
 							className={styles.sidenav_menu_x}
 							onClick={() => setIsActive(false)}
 						/>
-						<li>
+						<div>
 							<a href="/projects" className={styles.sidenav_menu_link}>
 								Projects
 							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/patrickmahloy/details/featured/" target="_blank" className={styles.sidenav_menu_link}>
+						</div>
+						<div>
+							<a href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2" target="_blank" className={styles.sidenav_menu_link}>
 								Resume
 							</a>
-						</li>
-						<li>
+						</div>
+						<div>
 							<a href="/contact" className={styles.sidenav_menu_link}>
 								Contact
 							</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 
 				<span className={styles.right}>
-					<li className={styles.menu_underlay}>
+					<div className={styles.menu_underlay}>
 						<a href="/projects" className={styles.link}>
 							Projects
 						</a>
-					</li>
-					<li className={styles.menu_underlay}>
-						<a href="https://www.linkedin.com/in/patrickmahloy/details/featured/" target="_blank" className={styles.link}>
+					</div>
+					<div className={styles.menu_underlay}>
+						<a href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2" target="_blank" className={styles.link}>
 							Resume
 						</a>
-					</li>
-					<li
+					</div>
+					<div
 						className={styles.menu_underlay}
 						id={styles.underlay_no_margin_right}
 					>
 						<a href="/contact" className={styles.link}>
 							Contact
 						</a>
-					</li>
+					</div>
 				</span>
-			</ul>
+			</div>
 			<div className={styles.page_content}>{children}</div>
 			<footer className={styles.footer}>
 				<div className={styles.footer_icons}>

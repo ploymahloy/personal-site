@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 
 import styles from '../styles/Default.module.scss';
 
+const LogoNoSSR = dynamic(() => import('../components/Logo'), { ssr: false });
+
 const Default = ({ children }) => {
-  const [isActive, setIsActive] = useState(false);
+	const [isActive, setIsActive] = useState(false);
 
 	return (
 		<>
-			<div className={styles.menu}>
-				<span>
-					<div className={`${styles.menu_underlay} ${styles.logo_underlay}`}>
-						<a href="/" className={`${styles.link} ${styles.logo}`}>
-							Patrick Mahloy
-						</a>
-					</div>
-				</span>
+      <div className={styles.menu}>
+        
+				{/* Logo */}
+				<LogoNoSSR />
 
 				<a
 					href="#!"
@@ -40,7 +39,11 @@ const Default = ({ children }) => {
 							</a>
 						</div>
 						<div>
-							<a href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2" target="_blank" className={styles.sidenav_menu_link}>
+							<a
+								href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2"
+								target="_blank"
+								className={styles.sidenav_menu_link}
+							>
 								Resume
 							</a>
 						</div>
@@ -59,7 +62,11 @@ const Default = ({ children }) => {
 						</a>
 					</div>
 					<div className={styles.menu_underlay}>
-						<a href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2" target="_blank" className={styles.link}>
+						<a
+							href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2"
+							target="_blank"
+							className={styles.link}
+						>
 							Resume
 						</a>
 					</div>

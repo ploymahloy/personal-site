@@ -1,20 +1,22 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { FaNode, FaSass } from 'react-icons/fa';
 import {
 	SiBootstrap,
 	SiCss3,
 	SiHtml5,
 	SiJavascript,
-	SiMongodb,
-	SiMysql,
 	SiNextdotjs,
 	SiReact,
 	SiTailwindcss,
 	SiTypescript
 } from 'react-icons/si';
+import Tooltip from '@mui/material/Tooltip';
 
 import Default from '../layouts/Default';
 import styles from '../styles/Home.module.scss';
+
+const profilePic = 'https://www.fillmurray.com/g/200/300';
 
 export default function Home() {
 	return (
@@ -26,43 +28,85 @@ export default function Home() {
 			</Head>
 
 			<Default>
-				<main className={styles.main}>
-					<div className={styles.left}>
-						<fieldset className={styles.fieldset}>
-							<legend className={`${styles.legend} ${styles.legend_spiel}`}>
-								Spiel
-							</legend>
-							<p className={styles.bio}>
-								{`Hi, I'm Patrick. Welcome to my site! I'm a web
-                developer and university/bootcamp graduate from Richmond, VA. I
-								aspire to build websites and webapps that are enjoyable to
-								interact with. What should we build together? 👨🏻‍💻`}
+				<main className={styles.container}>
+					<section className={styles.container_1}>
+						<div className={styles.profile}>
+							<Image
+								src={profilePic}
+								alt="Profile image"
+								width={300}
+								height={450}
+								layout={'intrinsic'}
+							/>
+						</div>
+						<div className={styles.bio}>
+							<h2 className={styles.bio_intro}>Hi, I'm Patrick.{'\n'}</h2>
+							<h3 className={styles.bio_about}>
+								I'm a Web Developer from Richmond, VA!
+							</h3>
+							<p className={styles.bio_spiel}>
+								Ever since a friend showed me the basics of web development a
+								few years back, I've been in love ever since. One truly gets out
+								what they put in and I LOVE that! As of right now, I am highly
+								motivated in my search for a junior role in web development, and
+								look forward to joining a team!
+								<p>Here are some of my favorites technologies to work with:</p>
 							</p>
-						</fieldset>
-					</div>
-					<div className={styles.right}>
-						<fieldset className={styles.fieldset}>
-							<legend className={`${styles.legend} ${styles.legend_stack}`}>
-								Stack
-							</legend>
-							<p className={styles.stack}>
-								<SiHtml5 className={styles.stack_icon} />
-								<SiCss3 className={styles.stack_icon} />
-								<SiBootstrap className={styles.stack_icon} />
-								<SiTailwindcss className={styles.stack_icon} />
-								<br />
-								<FaSass className={styles.stack_icon} />
-								<SiJavascript className={styles.stack_icon} />
-								<SiTypescript className={styles.stack_icon} />
-								<SiReact className={styles.stack_icon} />
-								<br />
-								<SiNextdotjs className={styles.stack_icon} />
-								<FaNode className={styles.stack_icon} />
-								<SiMysql className={styles.stack_icon} />
-								<SiMongodb className={styles.stack_icon} />
-							</p>
-						</fieldset>
-					</div>
+							<div className={styles.bio_tech}>
+								<Tooltip title="HTML">
+									<span>
+										<SiHtml5 className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="CSS">
+									<span>
+										<SiCss3 className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="Sass">
+									<span>
+										<FaSass className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="Bootstrap">
+									<span>
+										<SiBootstrap className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="TailwindCSS">
+									<span>
+										<SiTailwindcss className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="JavaScript">
+									<span>
+										<SiJavascript className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="TypeScript">
+									<span>
+										<SiTypescript className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="React.JS">
+									<span>
+										<SiReact className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="Next.JS">
+									<span>
+										<SiNextdotjs className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="Node.JS">
+									<span>
+										<FaNode className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+							</div>
+						</div>
+					</section>
+					<section className={styles.container_2}></section>
 				</main>
 			</Default>
 		</>

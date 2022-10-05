@@ -1,95 +1,82 @@
-@import './colors';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import '_colors.scss';
 
-.main {
-	display: flex;
-	align-items: flex-start;
-	margin: 0 1rem;
-	padding-bottom: 2.4rem;
+// Dark theme?
+
+.container {
+  padding: 1.5rem;
+
+  &_1 {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-.left,
-.right {
-	width: 49%;
-	margin: 10px;
-}
-
-.fieldset {
-	text-align: left;
-	border-color: black;
-	border-style: solid;
-	box-shadow: -10px 10px $primary-blue;
-}
-
-.legend {
-	font-family: Permanent Marker;
-	font-size: 2em;
-	transform: rotate(-10deg);
+.profile {
+  align-self: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: fit-content;
+  line-height: 0;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
 .bio {
-	margin: 0 2rem 1rem;
-	font-size: 24px;
-	font-weight: 300;
-}
+  padding: 1rem;
+  max-width: 67%;
+  white-space: pre-wrap;
+  
+  &_intro {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.75rem;
+  }
+  
+  &_about {
+    margin: 0;
+    font-size: 2rem;
+  }
 
-.stack {
-	text-align: center;
-}
+  &_spiel {
+    margin: 1rem 0;
+    font-size: 1.45rem;
+  }
 
-.stack_icon {
-	margin: 5px;
-	padding: 8px;
-
-	border-radius: 10px;
-	font-size: 72px;
-	color: white;
-	background-color: $primary-blue;
+  &_tech {
+    color: $primary-blue;
+    
+    &_icon {
+      margin: 2px;
+      font-size: 3rem;
+    }
+  }
 }
 
 @media (max-width: 900px) {
-	.main {
-		flex-direction: column;
-		align-items: center;
-		padding: 3rem 0 2rem 0;
-	}
+  .container_1,
+  .profile,
+  .bio {
+    display: block;
+  }
 
-	.left,
-	.right {
-		flex-direction: row;
-		width: 95%;
-		margin: 0 auto;
-	}
-
-	.bio {
-		margin: 15px;
-		font-size: 20px;
-	}
-
-	.right {
-		margin-top: 1rem;
-	}
-
-	.split {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.stack {
-		text-align: center;
-	}
+  .bio {
+    max-width: none;
+    text-align: center;
+  }
 }
 
-@media (max-width: 481px) {
-	.main {
-		padding: 1.5rem 0 0 0;
-	}
+@media (max-width: 900px) {
+  .bio {
+    padding: 0;
 
-	.bio {
-		font-size: 18px;
-	}
+    &_intro {
+      font-size: 2rem;
+    }
 
-	.stack_icon {
-		margin: 2px;
-		font-size: 44px;
-	}
+    &_about {
+      font-size: 1.75rem;
+    }
+  }
 }

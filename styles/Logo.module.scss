@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import '_colors.scss';
+
+.logo {
+  top: -24px;
+  left: -12px;
+	font-size: 2.25rem;
+  font-family: Permanent Marker;
+  z-index: 1000;
+}
+
+.menu_underlay {
+	display: inline-block;
+	margin: 12px;
+
+	border: none;
+  border-radius: 5px;
+
+	background-color: $primary-blue;
+	z-index: 0;
+}
+
+.logo_underlay {
+  position: relative;
+  top: 14px;
+	height: 30px;
+  z-index: 0;
+}
+
+.link {
+	display: block;
+	position: relative;
+
+	border: none;
+	outline: none;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+		1px 1px 0 #fff;
+
+	background-color: transparent;
+}
+
+.menu_underlay:hover {
+	outline: 2px solid $hover-blue;
+	background-color: transparent;
+}
+
+.menu_underlay:hover .link {
+	color: $hover-blue;
+}

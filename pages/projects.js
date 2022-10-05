@@ -69,14 +69,6 @@ export default function Projects() {
 						linkSource="https://github.com/ploymahloy/mortgage-calculator"
 						techStack="React"
 					/>
-					<ProjectCard
-						appSummary="Everyone seems to have this project in their portfolio, and for good reason. It's great for beginners and introduces challenges that allow the developer to graduate to more complex issues. The technologies used
-            for this project are:"
-						appTitle="Basic Calculator"
-						linkDemo="https://ploymahloy.github.io/basic-calculator/"
-						linkSource="https://github.com/ploymahloy/basic-calculator"
-						techStack="JavaScript"
-					/>
 				</div>
 			</Default>
 		</>

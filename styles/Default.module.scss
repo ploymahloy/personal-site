@@ -2,22 +2,23 @@
 
 .menu {
 	display: flex;
+  align-items: center;
 	justify-content: space-between;
-	margin: 1rem 1rem 0;
-	padding: 1rem 1rem 0;
-
-	text-align: right;
-	list-style: none;
+	margin: 2rem;
+	font-family: Permanent Marker;
 }
 
 .menu_underlay {
 	display: inline-block;
+  position: relative;
+  top: 4px;
 	margin: 12px;
-	height: 20px;
+	height: 18px;
 
 	border: none;
+  border-radius: 5px;
 	background-color: $primary-blue;
-	z-index: -1;
+	z-index: 0;
 }
 
 #underlay_no_margin_right {
@@ -33,15 +34,11 @@
 	color: $hover-blue;
 }
 
-.logo_underlay {
-	height: 32px;
-}
-
 .link {
 	display: block;
 	position: relative;
-	top: -14px;
-	left: -14px;
+	top: -12px;
+	left: -10px;
 
 	border: none;
 	outline: none;
@@ -49,19 +46,12 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
-	font-family: Permanent Marker;
-	font-size: 24px;
+	font-size: 1.25rem;
 	font-weight: 900;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
 		1px 1px 0 #fff;
 
 	background-color: transparent;
-}
-
-.logo {
-	top: -26px;
-	left: -24px;
-	font-size: 42px;
 }
 
 .menu_icon {
@@ -133,7 +123,7 @@
 
 		.footer_icon {
 			display: inline-block;
-			margin: 8px 5px 0;
+			margin: 8px 5px 2px;
 			font-size: 32px;
 		}
 
@@ -148,11 +138,6 @@
 		display: none;
 	}
 
-	.logo {
-		font-size: 32px;
-		top: -18px;
-	}
-
 	.menu_underlay {
 		height: 28px;
 	}
@@ -160,7 +145,6 @@
 	.menu_icon {
 		display: flex;
 		align-self: center;
-		line-height: 1px;
 	}
 
 	.footer_icon {
@@ -168,22 +152,8 @@
 	}
 }
 
-@media (max-width: 481px) {
+@media (max-width: 451px) {
 	.menu {
 		padding: 0;
-	}
-
-	.logo {
-		font-size: 20px;
-		top: -14px;
-		left: -10px;
-	}
-
-	.menu_underlay {
-		height: 15px;
-	}
-
-	.menu_icon {
-		font-size: 24px;
 	}
 }

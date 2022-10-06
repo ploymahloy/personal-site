@@ -21,7 +21,7 @@ import Default from '../layouts/Default';
 import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Home.module.scss';
 
-const profilePic = '/../public/headshot.jpg';
+const profilePic = '/../public/headshot.png';
 
 export default function Home() {
 	const form = useRef();

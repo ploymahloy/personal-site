@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Logo.module.scss';
 
@@ -27,9 +28,11 @@ export default function LogoNoSSR() {
 	return (
 		<span>
 			<div className={`${styles.menu_underlay} ${styles.logo_underlay}`}>
-				<a href="/" className={`${styles.link} ${styles.logo}`}>
-					{windowWidth > 451 ? 'Patrick Mahloy' : 'PM'}
-				</a>
+				<Link href="/">
+					<a className={`${styles.link} ${styles.logo}`}>
+						{windowWidth > 451 ? 'Patrick Mahloy' : 'PM'}
+					</a>
+				</Link>
 			</div>
 		</span>
 	);

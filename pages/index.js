@@ -62,15 +62,15 @@ export default function Home() {
 							/>
 						</div>
 						<div className={styles.bio}>
-							<h2 className={styles.bio_intro}>Hi, I'm Patrick.{'\n'}</h2>
+              <h2 className={styles.bio_intro}>{`Hi, I\'m Patrick.`} {'\n'}</h2>
 							<h3 className={styles.bio_about}>
-								I'm a Web Developer from Richmond, VA!
+								{`I\'m a Web Developer from Richmond, VA!`}
 							</h3>
 							<p className={styles.bio_spiel}>
-								Ever since a friend showed me the basics of web development a
-								few years back, I've been in love ever since. One truly gets out
+								{`Ever since a friend showed me the basics of web development a
+								few years back, I have been in love ever since. One truly gets out
 								what they put in and I LOVE that! Currently, I am pursuing
-								freelance and full-time employment opportunities.
+								freelance and full-time employment opportunities.`}
 								<p>Here are some of my favorites technologies to work with:</p>
 							</p>
 							<div className={styles.bio_tech}>

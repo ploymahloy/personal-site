@@ -17,7 +17,7 @@
 
 .profile {
 	align-self: center;
-	margin: 0 auto;
+  margin: 0 1rem;
 	margin-bottom: 3rem;
 
 	width: fit-content;
@@ -34,21 +34,20 @@
 .bio {
 	padding: 0 1rem 1rem;
 	max-width: 60%;
+  font-size: 1.25rem;
 
 	&_intro {
 		margin: 0;
 		font-weight: bold;
-		font-size: 2.75rem;
+		font-size: 2.5rem;
 	}
 
 	&_about {
 		margin: 0;
-		font-size: 2rem;
 	}
 
 	&_spiel {
 		margin: 1rem 0;
-		font-size: 1.45rem;
 	}
 
 	&_tech {
@@ -158,6 +157,15 @@
 	.bio {
 		display: block;
 	}
+
+  .container_1 {
+    margin-top: 0;
+  }
+
+  .profile {
+    margin: 0 auto 2rem;
+  }
+
 	.bio {
 		max-width: none;
 		text-align: center;

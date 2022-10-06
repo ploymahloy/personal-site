@@ -38,7 +38,7 @@
 .link {
 	display: block;
 	position: relative;
-	top: -12px;
+	top: -10px;
 	left: -10px;
 
 	border: none;
@@ -47,7 +47,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	font-weight: 900;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
 		1px 1px 0 #fff;
@@ -155,7 +155,8 @@
 
 @media (min-width: 1600px) {
   .menu {
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 0 2rem;
   }
 }
 

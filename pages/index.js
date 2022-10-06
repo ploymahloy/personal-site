@@ -20,8 +20,7 @@ import emailjs from 'emailjs-com';
 import Default from '../layouts/Default';
 import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Home.module.scss';
-
-const profilePic = '/../public/headshot.png';
+import profilePic from '../public/headshot.png';
 
 export default function Home() {
 	const form = useRef();
@@ -56,8 +55,8 @@ export default function Home() {
 							<Image
 								src={profilePic}
 								alt="Profile image"
-								width={350}
-								height={375}
+								width={300}
+								height={315}
 								layout={'intrinsic'}
 							/>
 						</div>

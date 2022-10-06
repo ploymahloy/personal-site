@@ -5,6 +5,7 @@
   align-items: center;
 	justify-content: space-between;
 	margin: 2rem;
+  max-width: 1600px;
 	font-family: Permanent Marker;
 }
 
@@ -150,6 +151,12 @@
 	.footer_icon {
 		font-size: 48px;
 	}
+}
+
+@media (min-width: 1600px) {
+  .menu {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 451px) {

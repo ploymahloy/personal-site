@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
+
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 
@@ -34,7 +35,7 @@ const Default = ({ children }) => {
 							onClick={() => setIsActive(false)}
 						/>
 						<div>
-							<a href="/projects" className={styles.sidenav_menu_link}>
+							<a href="#projects" className={styles.sidenav_menu_link}>
 								Projects
 							</a>
 						</div>
@@ -48,7 +49,7 @@ const Default = ({ children }) => {
 							</a>
 						</div>
 						<div>
-							<a href="/contact" className={styles.sidenav_menu_link}>
+							<a href="#contact" className={styles.sidenav_menu_link}>
 								Contact
 							</a>
 						</div>
@@ -57,7 +58,7 @@ const Default = ({ children }) => {
 
 				<span className={styles.right}>
 					<div className={styles.menu_underlay}>
-						<a href="/projects" className={styles.link}>
+						<a href="#projects" className={styles.link}>
 							Projects
 						</a>
 					</div>
@@ -74,7 +75,7 @@ const Default = ({ children }) => {
 						className={styles.menu_underlay}
 						id={styles.underlay_no_margin_right}
 					>
-						<a href="/contact" className={styles.link}>
+						<a href="#contact" className={styles.link}>
 							Contact
 						</a>
 					</div>

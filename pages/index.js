@@ -1,6 +1,9 @@
+import { useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaNode, FaSass } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import {
 	SiBootstrap,
 	SiCss3,
@@ -12,13 +15,32 @@ import {
 	SiTypescript
 } from 'react-icons/si';
 import Tooltip from '@mui/material/Tooltip';
+import emailjs from 'emailjs-com';
 
 import Default from '../layouts/Default';
+import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Home.module.scss';
 
-const profilePic = 'https://www.fillmurray.com/g/200/300';
+const profilePic = '/../public/headshot.jpg';
 
 export default function Home() {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm('gmail', 'template_a', form.current, '_iYWkac8R892UoUAV')
+			.then(
+				(res) => {
+					alert(res.text);
+				},
+				(error) => {
+					alert(error.text);
+				}
+			);
+	};
+
 	return (
 		<>
 			<Head>
@@ -34,8 +56,8 @@ export default function Home() {
 							<Image
 								src={profilePic}
 								alt="Profile image"
-								width={300}
-								height={450}
+								width={350}
+								height={375}
 								layout={'intrinsic'}
 							/>
 						</div>
@@ -47,9 +69,8 @@ export default function Home() {
 							<p className={styles.bio_spiel}>
 								Ever since a friend showed me the basics of web development a
 								few years back, I've been in love ever since. One truly gets out
-								what they put in and I LOVE that! As of right now, I am highly
-								motivated in my search for a junior role in web development, and
-								look forward to joining a team!
+								what they put in and I LOVE that! Currently, I am pursuing
+								freelance and full-time employment opportunities.
 								<p>Here are some of my favorites technologies to work with:</p>
 							</p>
 							<div className={styles.bio_tech}>
@@ -106,7 +127,114 @@ export default function Home() {
 							</div>
 						</div>
 					</section>
-					<section className={styles.container_2}></section>
+					<div className={styles.wrapper}>
+						<header id="projects" className={styles.page_title}>
+							Projects
+						</header>
+						<ProjectCard
+							appSummary="In an attempt to become more familiar with NextJS, I wanted to apply responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page. The technologies used for this project are:"
+							appTitle="Portfolio Template"
+							linkDemo="https://next-template-xi.vercel.app/"
+							linkSource="https://github.com/ploymahloy/next-template"
+							techStack="NextJS, Sass"
+						/>
+						<ProjectCard
+							appSummary="This web app is meant to assist users of a project-based
+            company better organize their projects by deadline and job
+            type. Users are also able to add new work orders as well. The
+            technologies used for this project are:"
+							appTitle="Project Organizer"
+							linkDemo="https://ploymahloy.github.io/project-organizer/"
+							linkSource="https://github.com/ploymahloy/project-organizer"
+							techStack="React, Bootstrap"
+						/>
+						<ProjectCard
+							appSummary="This CRUD app reads and writes notes to a JSON database stored in the front end. The Note Taker was built while attending U of R's coding bootcamp. The technologies used for this project are:"
+							appTitle="Note Taker"
+							linkDemo="https://note-taker-mahloy.herokuapp.com/"
+							linkSource="https://github.com/ploymahloy/note-taker"
+							techStack="Node, Bootstrap"
+						/>
+						<ProjectCard
+							appSummary="To break the mould of some of my other projects' workflow, I
+            made a command line application that functions as a simple
+            calculator with a difficult personality. The
+            technologies used for this project are:"
+							appTitle="CLI Calculator"
+							linkDemo="https://www.youtube.com/watch?v=gUpLU6GX3XY"
+							linkSource="https://github.com/ploymahloy/cli-calculator"
+							techStack="Typescript, Node"
+						/>
+						<ProjectCard
+							appSummary="Utilizing the Dictionary API, this simple app populates dictionary data (i.e. part of speech and definition) from user input. The technologies used for this project
+            are:"
+							appTitle="Dictionary App"
+							linkDemo="https://ploymahloy.github.io/dictionary-app/"
+							linkSource="https://github.com/ploymahloy/dictionary-app"
+							techStack="React Typescript"
+						/>
+						{/* <ProjectCard
+							appSummary="A very straightforward web app designed to calculate monthly
+            mortgage payments based on data input by the user. The
+            technologies used for this project are:"
+							appTitle="Mortgage Calculator"
+							linkDemo="https://ploymahloy.github.io/mortgage-calculator/"
+							linkSource="https://github.com/ploymahloy/mortgage-calculator"
+							techStack="React"
+						/> */}
+					</div>
+					<div className={styles.wrapper}>
+						<header id="contact" className={styles.page_title}>
+							Contact
+						</header>
+						<div className={styles.contact}>
+							<BsFillTelephoneFill className={styles.contact_icon} />{' '}
+							<p className={styles.contact_detail}>{'(757) 286-6772'}</p>
+						</div>
+						<div className={styles.contact}>
+							<MdEmail className={styles.contact_icon} />{' '}
+							<p className={styles.contact_detail}>
+								{'patrick.mahloy@gmail.com'}
+							</p>
+						</div>
+						<form ref={form} onSubmit={sendEmail} className={styles.form}>
+							<div>
+								<input
+									required
+									type="text"
+									name="name"
+									placeholder="Name"
+									className={styles.input}
+								/>
+								<input
+									required
+									type="text"
+									name="company"
+									placeholder="Company"
+									className={styles.input}
+								/>
+							</div>
+							<div>
+								<input
+									required
+									type="email"
+									name="email"
+									placeholder="Email"
+									className={styles.input}
+								/>
+							</div>
+							<div>
+								<textarea
+									required
+									name="message"
+									placeholder="Message"
+									resize="vertical"
+									className={styles.textarea}
+								/>
+							</div>
+							<input type="submit" value="Send" className={styles.button} />
+						</form>
+					</div>
 				</main>
 			</Default>
 		</>

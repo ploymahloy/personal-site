@@ -62,7 +62,7 @@
 
 .page_title {
 	width: fit-content;
-	margin: 0 auto;
+	margin: 0 auto 2rem;
 
 	font-family: Permanent Marker;
 	font-size: 3em;
@@ -182,6 +182,10 @@
 }
 
 @media (max-width: 768px) {
+  .bio {
+    margin-top: 3rem;
+  }
+
   .wrapper {
     padding: 1.5rem 1.25rem;
   }
@@ -197,7 +201,11 @@
 	}
 
   .wrapper {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .contact_detail {
+    font-size: 14px;
   }
 
 	.fieldset {
@@ -206,10 +214,6 @@
 
 	.legend {
 		font-size: 2rem;
-	}
-
-	.form {
-		padding: 1rem 0;
 	}
 
 	.input,

@@ -4,6 +4,7 @@
 	border-color: black;
 	border-style: solid;
 	text-align: left;
+  border-radius: 5px;
 	box-shadow: -10px 10px $primary-blue;
 }
 
@@ -50,7 +51,7 @@
 	border-radius: 10px;
 
 	font-family: Permanent Marker;
-	font-size: 28px;
+	font-size: 24px;
 	background-color: $primary-blue;
 }
 
@@ -84,8 +85,8 @@
     padding: 0;
   }
 
-  .button_wrapper {
-    display: inline-block;
-    width: 100%;
+  .button {
+    margin: 0 0 10px;
+    font-size: 18px;
   }
 }

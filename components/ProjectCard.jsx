@@ -13,16 +13,22 @@ export default function Project(props) {
 						<p className={styles.project_summary_bold}>{techStack}</p>
 					</p>
 					<div className={styles.button_wrapper}>
-						<button className={styles.button}>
-							<a href={linkDemo} target="_blank" rel="noreferrer">
-								Demo
-							</a>
-						</button>
-						<button className={styles.button}>
-							<a href={linkSource} target="_blank" rel="noreferrer">
-								Source
-							</a>
-						</button>
+						<a
+							className={styles.button}
+							href={linkDemo}
+							target="_blank"
+							rel="noreferrer"
+						>
+							Demo
+						</a>
+						<a
+							className={styles.button}
+							href={linkSource}
+							target="_blank"
+							rel="noreferrer"
+						>
+							Source
+						</a>
 					</div>
 				</fieldset>
 			</div>

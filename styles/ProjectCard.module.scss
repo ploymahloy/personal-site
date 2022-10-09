@@ -4,7 +4,7 @@
 	border-color: black;
 	border-style: solid;
 	text-align: left;
-  border-radius: 5px;
+	border-radius: 5px;
 	box-shadow: -10px 10px $primary-blue;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .project_summary_wrapper {
-  margin: 0 auto;
+	margin: 0 auto;
 	padding: 15px;
 	background-color: white;
 }
@@ -30,10 +30,10 @@
 	margin: 10px 10px 20px;
 	font-size: 18px;
 
-  &_bold {
-    display: inline;
-    font-weight: 800;
-  }
+	&_bold {
+		display: inline;
+		font-weight: 800;
+	}
 }
 
 .button_wrapper {
@@ -55,9 +55,17 @@
 	background-color: $primary-blue;
 }
 
-.button:focus,
-.button:hover {
+.button:link,
+.button:visited,
+.button:focus {
+	color: black;
+	background-color: $primary-blue;
+}
+
+.button:hover,
+.button:active {
 	color: white;
+	cursor: pointer;
 	background-color: $hover-blue;
 }
 
@@ -81,12 +89,12 @@
 		text-align: center;
 	}
 
-  .project_summary_wrapper {
-    padding: 0;
-  }
+	.project_summary_wrapper {
+		padding: 0;
+	}
 
-  .button {
-    margin: 0 0 10px;
-    font-size: 18px;
-  }
+	.button {
+		margin: 0 0 10px;
+		font-size: 18px;
+	}
 }

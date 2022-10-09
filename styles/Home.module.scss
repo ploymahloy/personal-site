@@ -104,8 +104,16 @@
   &_detail {
     margin: 5px 0;
     font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &_detail::selection {
+    color: white;
+    background-color: $hover-blue;
   }
 }
+
+
 
 
 .input,
@@ -117,10 +125,12 @@
 .input,
 .textarea {
 	padding: 5px;
-	border: 2px solid black;
+	border: 3px solid black;
   border-radius: 5px;
 	font-size: 20px;
 	box-shadow: -4px 4px $primary-blue;
+  -webkit-box-shadow: -4px 4px $primary-blue;
+  -moz-box-shadow: -4px 4px $primary-blue;
 }
 
 .input {
@@ -137,7 +147,7 @@
 .button {
 	padding: 10px 20px;
 	width: 100%;
-	border: none;
+	border: 3px solid black;
 	outline: none;
 	border-radius: 10px;
 	background-color: $primary-blue;
@@ -145,10 +155,20 @@
 	font-size: 32px;
 }
 
-.button:focus,
-.button:hover {
-	color: white;
-	background-color: $hover-blue;
+.button:link,
+.button:visited,
+.button:focus {
+  color: black;
+  background-color: $primary-blue;
+}
+
+.button:hover,
+.button:active {
+	cursor: pointer;
+	color: $hover-blue;
+  border: 3px solid white;
+  outline: 3px solid $hover-blue;
+	background-color: white;
 }
 
 @media (max-width: 900px) {

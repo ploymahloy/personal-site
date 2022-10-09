@@ -64,11 +64,10 @@
 .button:hover,
 .button:active {
 	cursor: pointer;
-	color: white;
-  border: none;
-  outline: 3px solid black;
-  border: 3px solid $hover-blue;
-	background-color: $hover-blue;
+	color: $hover-blue;
+  border: 3px solid white;
+  outline: 3px solid $hover-blue;
+	background-color: white;
 }
 
 @media (max-width: 768px) {

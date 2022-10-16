@@ -19,6 +19,8 @@ import emailjs from 'emailjs-com';
 
 import Default from '../layouts/Default';
 import ProjectCard from '../components/ProjectCard';
+import Modal from '../components/Modal';
+
 import styles from '../styles/Home.module.scss';
 import profilePic from '../public/headshot.png';
 
@@ -67,7 +69,7 @@ export default function Home() {
 							</h3>
 							<p className={styles.bio_spiel}>
 								{`Ever since a friend showed me the basics of web development a
-								few years back, I have been in love ever since. One truly gets out
+								few years ago, I have been in love ever since. One truly gets out
 								what they put in and I LOVE that! Currently, I am pursuing
 								freelance and full-time employment opportunities.`}
 								<p>Here are some of my favorites technologies to work with:</p>
@@ -146,13 +148,6 @@ export default function Home() {
 							linkDemo="https://ploymahloy.github.io/project-organizer/"
 							linkSource="https://github.com/ploymahloy/project-organizer"
 							techStack="React, Bootstrap"
-						/>
-						<ProjectCard
-							appSummary="This CRUD app reads and writes notes to a JSON database stored in the front end. The Note Taker was built while attending U of R's coding bootcamp. The technologies used for this project are:"
-							appTitle="Note Taker"
-							linkDemo="https://note-taker-mahloy.herokuapp.com/"
-							linkSource="https://github.com/ploymahloy/note-taker"
-							techStack="Node, Bootstrap"
 						/>
 						<ProjectCard
 							appSummary="To break the mould of some of my other projects' workflow, I

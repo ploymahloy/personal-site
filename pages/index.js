@@ -134,13 +134,13 @@ export default function Home() {
 						<header id="projects" className={styles.page_title}>
 							Projects
 						</header>
-						{/* <ProjectCard
-							appSummary="CRUD applications are an incredible learning experience. To add complexity, I modeled this project after Google Keep, and stored data in a MongoDB collection. The technologies used for this project are:"
+						<ProjectCard
+							appSummary="I use Google Keep almost every day between personal and professional use. I learned how to implement a masonry grid using pure CSS, among other layout techniques. The technologies used for this project are:"
 							appTitle="Keep Clone"
-							linkDemo="https://patrick-mahloy.vercel.app/"
-							linkSource="https://github.com/ploymahloy/personal-site"
-							techStack="React Typescript, Sass"
-						/> */}
+							linkDemo="https://keep-clone-f0u1cieio-ploymahloy.vercel.app"
+							linkSource="https://github.com/ploymahloy/keep_clone"
+							techStack="React Typescript, Sass, JSON"
+						/>
 						<ProjectCard
 							appSummary="A local store has been in business for over 50 years strong. Their website, unfortunately, has not been updated in almost 20 years. I created a site for the sake of developing my skills most relevant to freelance work. The technologies used for this project are:"
 							appTitle="SMB Landing Page"

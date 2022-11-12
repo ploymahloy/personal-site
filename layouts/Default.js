@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiMedium } from 'react-icons/si';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 
 import styles from '../styles/Default.module.scss';
@@ -41,7 +41,7 @@ const Default = ({ children }) => {
 						</div>
 						<div>
 							<a
-								href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2"
+								href="https://us.docworkspace.com/d/sIDSYyay2AYLyu5sG"
 								target="_blank"
 								className={styles.sidenav_menu_link}
 							>
@@ -97,6 +97,13 @@ const Default = ({ children }) => {
 						className={styles.footer_icon}
 					>
 						<SiLinkedin />
+					</a>
+					<a
+						href="https://medium.com/@patrick.mahloy"
+						target="_blank"
+						className={styles.footer_icon}
+					>
+						<SiMedium />
 					</a>
 				</div>
 			</footer>

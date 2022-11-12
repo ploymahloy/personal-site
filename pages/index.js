@@ -12,14 +12,14 @@ import {
 	SiNextdotjs,
 	SiReact,
 	SiTailwindcss,
-	SiTypescript
+	SiTypescript,
 } from 'react-icons/si';
 import Tooltip from '@mui/material/Tooltip';
 import emailjs from 'emailjs-com';
 
 import Default from '../layouts/Default';
-import ProjectCard from '../components/ProjectCard';
 import Modal from '../components/Modal';
+import ProjectCard from '../components/ProjectCard';
 
 import styles from '../styles/Home.module.scss';
 import profilePic from '../public/headshot.png';
@@ -63,7 +63,9 @@ export default function Home() {
 							/>
 						</div>
 						<div className={styles.bio}>
-              <h2 className={styles.bio_intro}>{`Hi, I\'m Patrick.`} {'\n'}</h2>
+							<h2 className={styles.bio_intro}>
+								{`Hi, I\'m Patrick.`} {'\n'}
+							</h2>
 							<h3 className={styles.bio_about}>
 								{`I\'m a Web Developer from Richmond, VA!`}
 							</h3>
@@ -132,12 +134,33 @@ export default function Home() {
 						<header id="projects" className={styles.page_title}>
 							Projects
 						</header>
+						{/* <ProjectCard
+							appSummary="CRUD applications are an incredible learning experience. To add complexity, I modeled this project after Google Keep, and stored data in a MongoDB collection. The technologies used for this project are:"
+							appTitle="Keep Clone"
+							linkDemo="https://patrick-mahloy.vercel.app/"
+							linkSource="https://github.com/ploymahloy/personal-site"
+							techStack="React Typescript, Sass"
+						/> */}
+						<ProjectCard
+							appSummary="A local store has been in business for over 50 years strong. Their website, unfortunately, has not been updated in almost 20 years. I created a site for the sake of developing my skills most relevant to freelance work. The technologies used for this project are:"
+							appTitle="SMB Landing Page"
+							linkDemo="https://games-market.vercel.app/"
+							linkSource="https://github.com/ploymahloy/games-market"
+							techStack="NextJS, TailwindCSS, JSON"
+						/>
+						<ProjectCard
+							appSummary="This site was built to showcase responsive design skills, and to showcase my other projects. To view the demo, scroll around! The technologies used for this project are:"
+							appTitle="My Website"
+							linkDemo="https://patrick-mahloy.vercel.app/"
+							linkSource="https://github.com/ploymahloy/personal-site"
+							techStack="NextJS, Sass, JSON"
+						/>
 						<ProjectCard
 							appSummary="In an attempt to become more familiar with NextJS, I wanted to apply responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page. The technologies used for this project are:"
-							appTitle="Portfolio Template"
+							appTitle="Artist Portfolio"
 							linkDemo="https://next-template-xi.vercel.app/"
 							linkSource="https://github.com/ploymahloy/next-template"
-							techStack="NextJS, Sass"
+							techStack="NextJS, Sass, JSON"
 						/>
 						<ProjectCard
 							appSummary="This web app is meant to assist users of a project-based
@@ -147,35 +170,18 @@ export default function Home() {
 							appTitle="Project Organizer"
 							linkDemo="https://ploymahloy.github.io/project-organizer/"
 							linkSource="https://github.com/ploymahloy/project-organizer"
-							techStack="React, Bootstrap"
+							techStack="React, Bootstrap, SQL, JSON"
 						/>
 						<ProjectCard
 							appSummary="To break the mould of some of my other projects' workflow, I
             made a command line application that functions as a simple
             calculator with a difficult personality. The
             technologies used for this project are:"
-							appTitle="CLI Calculator"
+							appTitle="Command Line App"
 							linkDemo="https://www.youtube.com/watch?v=gUpLU6GX3XY"
 							linkSource="https://github.com/ploymahloy/cli-calculator"
-							techStack="Typescript, Node"
+							techStack="Typescript, Node, JSON"
 						/>
-						<ProjectCard
-							appSummary="Utilizing the Dictionary API, this simple app populates dictionary data (i.e. part of speech and definition) from user input. The technologies used for this project
-            are:"
-							appTitle="Dictionary App"
-							linkDemo="https://ploymahloy.github.io/dictionary-app/"
-							linkSource="https://github.com/ploymahloy/dictionary-app"
-							techStack="React Typescript"
-						/>
-						{/* <ProjectCard
-							appSummary="A very straightforward web app designed to calculate monthly
-            mortgage payments based on data input by the user. The
-            technologies used for this project are:"
-							appTitle="Mortgage Calculator"
-							linkDemo="https://ploymahloy.github.io/mortgage-calculator/"
-							linkSource="https://github.com/ploymahloy/mortgage-calculator"
-							techStack="React"
-						/> */}
 					</div>
 					<div className={styles.wrapper}>
 						<header id="contact" className={styles.page_title}>

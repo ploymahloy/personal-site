@@ -9,7 +9,10 @@ export default function Project(props) {
 				<fieldset className={styles.fieldset}>
 					<legend className={styles.legend_project}>{appTitle}</legend>
 					<p className={styles.project_summary}>
-						{appSummary}{' '}
+						{appSummary}
+						<br />
+						<br />
+						The technologies used for this project are:{' '}
 						<p className={styles.project_summary_bold}>{techStack}</p>
 					</p>
 					<div className={styles.button_wrapper}>

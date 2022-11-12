@@ -135,28 +135,28 @@ export default function Home() {
 							Projects
 						</header>
 						<ProjectCard
-							appSummary="I use Google Keep almost every day between personal and professional use. I learned how to implement a masonry grid using pure CSS, among other layout techniques. The technologies used for this project are:"
+							appSummary="I use Google Keep almost every day between personal and professional use. I learned how to implement a masonry grid using pure CSS, among other layout techniques."
 							appTitle="Keep Clone"
 							linkDemo="https://keep-clone-f0u1cieio-ploymahloy.vercel.app"
 							linkSource="https://github.com/ploymahloy/keep_clone"
 							techStack="React Typescript, Sass, JSON"
 						/>
 						<ProjectCard
-							appSummary="A local store has been in business for over 50 years strong. Their website, unfortunately, has not been updated in almost 20 years. I created a site for the sake of developing my skills most relevant to freelance work. The technologies used for this project are:"
+							appSummary="A local store has been in business for over 50 years strong. Their website, unfortunately, has not been updated in almost 20 years. I created a site for the sake of developing my skills most relevant to freelance work."
 							appTitle="SMB Landing Page"
 							linkDemo="https://games-market.vercel.app/"
 							linkSource="https://github.com/ploymahloy/games-market"
 							techStack="NextJS, TailwindCSS, JSON"
 						/>
 						<ProjectCard
-							appSummary="This site was built to showcase responsive design skills, and to showcase my other projects. To view the demo, scroll around! The technologies used for this project are:"
+							appSummary="This site was built to showcase responsive design skills, and to showcase my other projects. To view the demo, scroll around! "
 							appTitle="My Website"
 							linkDemo="https://patrick-mahloy.vercel.app/"
 							linkSource="https://github.com/ploymahloy/personal-site"
-							techStack="NextJS, Sass, JSON"
+							techStack="NextJS, Sass, Material UI, JSON"
 						/>
 						<ProjectCard
-							appSummary="In an attempt to become more familiar with NextJS, I wanted to apply responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page. The technologies used for this project are:"
+							appSummary="In an attempt to become more familiar with NextJS, I wanted to apply responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page."
 							appTitle="Artist Portfolio"
 							linkDemo="https://next-template-xi.vercel.app/"
 							linkSource="https://github.com/ploymahloy/next-template"
@@ -165,8 +165,7 @@ export default function Home() {
 						<ProjectCard
 							appSummary="This web app is meant to assist users of a project-based
             company better organize their projects by deadline and job
-            type. Users are also able to add new work orders as well. The
-            technologies used for this project are:"
+            type. Users are also able to add new work orders as well."
 							appTitle="Project Organizer"
 							linkDemo="https://ploymahloy.github.io/project-organizer/"
 							linkSource="https://github.com/ploymahloy/project-organizer"
@@ -175,8 +174,7 @@ export default function Home() {
 						<ProjectCard
 							appSummary="To break the mould of some of my other projects' workflow, I
             made a command line application that functions as a simple
-            calculator with a difficult personality. The
-            technologies used for this project are:"
+            calculator with a difficult personality. The interface prompts the user for two numbers and an operator then calculates the result."
 							appTitle="Command Line App"
 							linkDemo="https://www.youtube.com/watch?v=gUpLU6GX3XY"
 							linkSource="https://github.com/ploymahloy/cli-calculator"

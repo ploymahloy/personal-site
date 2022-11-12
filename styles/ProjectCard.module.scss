@@ -1,7 +1,7 @@
 @import './colors.scss';
 
 .fieldset {
-	border: 3px solid black;
+  border: 3px solid black;
 	border-radius: 5px;
 	box-shadow: -10px 10px $primary-blue;
 }
@@ -13,6 +13,7 @@
 }
 
 .project_summary_wrapper {
+  width: 100%;
 	margin: 0 auto;
 	padding: 15px;
 	background-color: white;
@@ -26,10 +27,11 @@
 
 .project_summary {
 	margin: 10px 10px 20px;
-	font-size: 18px;
-
+	font-size: 1.25rem;
+  
 	&_bold {
-		display: inline;
+    display: inline;
+    font-size: 1.25rem;
 		font-weight: 800;
 	}
 }

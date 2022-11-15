@@ -18,7 +18,6 @@ import Tooltip from '@mui/material/Tooltip';
 import emailjs from 'emailjs-com';
 
 import Default from '../layouts/Default';
-import Modal from '../components/Modal';
 import ProjectCard from '../components/ProjectCard';
 
 import styles from '../styles/Home.module.scss';
@@ -169,7 +168,7 @@ export default function Home() {
 							appTitle="Project Organizer"
 							linkDemo="https://ploymahloy.github.io/project-organizer/"
 							linkSource="https://github.com/ploymahloy/project-organizer"
-							techStack="React, Bootstrap, SQL, JSON"
+							techStack="React, Bootstrap, JSON"
 						/>
 						<ProjectCard
 							appSummary="To break the mould of some of my other projects' workflow, I

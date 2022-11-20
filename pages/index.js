@@ -9,7 +9,8 @@ import {
 	SiCss3,
 	SiHtml5,
 	SiJavascript,
-	SiNextdotjs,
+  SiNextdotjs,
+  SiMaterialui,
 	SiReact,
 	SiTailwindcss,
 	SiTypescript,
@@ -99,6 +100,11 @@ export default function Home() {
 								<Tooltip title="TailwindCSS">
 									<span>
 										<SiTailwindcss className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="Material UI">
+									<span>
+										<SiMaterialui className={styles.bio_tech_icon} />
 									</span>
 								</Tooltip>
 								<Tooltip title="JavaScript">

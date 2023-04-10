@@ -144,28 +144,28 @@ export default function Home() {
 							appTitle="Keep Clone"
 							linkDemo="https://keep-clone-f0u1cieio-ploymahloy.vercel.app"
 							linkSource="https://github.com/ploymahloy/keep_clone"
-							techStack="React Typescript, Sass, JSON"
+							techStack="React Typescript, Sass"
 						/>
 						<ProjectCard
 							appSummary="A local store has been in business for over 50 years strong. Their website, unfortunately, has not been updated in almost 20 years. I created a site for the sake of developing my skills most relevant to freelance work."
 							appTitle="SMB Landing Page"
 							linkDemo="https://games-market.vercel.app/"
 							linkSource="https://github.com/ploymahloy/games-market"
-							techStack="NextJS, TailwindCSS, JSON"
+							techStack="NextJS, TailwindCSS"
 						/>
 						<ProjectCard
 							appSummary="This site was built to showcase responsive design skills, and to showcase my other projects. To view the demo, scroll around! "
 							appTitle="My Website"
 							linkDemo="https://patrick-mahloy.vercel.app/"
 							linkSource="https://github.com/ploymahloy/personal-site"
-							techStack="NextJS, Sass, Material UI, JSON"
+							techStack="NextJS, Sass, Material UI"
 						/>
 						<ProjectCard
 							appSummary="In an attempt to become more familiar with NextJS, I wanted to apply responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page."
 							appTitle="Artist Portfolio"
 							linkDemo="https://next-template-xi.vercel.app/"
 							linkSource="https://github.com/ploymahloy/next-template"
-							techStack="NextJS, Sass, JSON"
+							techStack="NextJS, Sass"
 						/>
 						<ProjectCard
 							appSummary="This web app is meant to assist users of a project-based
@@ -174,7 +174,7 @@ export default function Home() {
 							appTitle="Project Organizer"
 							linkDemo="https://ploymahloy.github.io/project-organizer/"
 							linkSource="https://github.com/ploymahloy/project-organizer"
-							techStack="React, Bootstrap, JSON"
+							techStack="React, Bootstrap"
 						/>
 						<ProjectCard
 							appSummary="To break the mould of some of my other projects' workflow, I
@@ -183,7 +183,7 @@ export default function Home() {
 							appTitle="Command Line App"
 							linkDemo="https://www.youtube.com/watch?v=gUpLU6GX3XY"
 							linkSource="https://github.com/ploymahloy/cli-calculator"
-							techStack="Typescript, Node, JSON"
+							techStack="Typescript, Node"
 						/>
 					</div>
 					<div className={styles.wrapper}>

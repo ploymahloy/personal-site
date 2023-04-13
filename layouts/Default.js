@@ -41,8 +41,8 @@ const Default = ({ children }) => {
 						</div>
 						<div>
 							<a
-								href="https://us.docworkspace.com/d/sIDSYyay2AYLyu5sG"
-								target="_blank"
+								href="../public/PMahloy_Resume_2023.pdf"
+								download='Isaac_Moreno_Resume.pdf'
 								className={styles.sidenav_menu_link}
 							>
 								Resume
@@ -64,8 +64,8 @@ const Default = ({ children }) => {
 					</div>
 					<div className={styles.menu_underlay}>
 						<a
-							href="https://us.docs.wps.com/l/sIEmYyay2AYGt55kG?v=v2"
-							target="_blank"
+							href="https://drive.google.com/file/d/1U79EpUeahaPozcDEsm-Z7O-9lCtr2C-q/view?usp=sharing"
+							download="Patrick_Mahloy_Resume.pdf"
 							className={styles.link}
 						>
 							Resume

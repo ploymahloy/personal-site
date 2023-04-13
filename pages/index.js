@@ -5,15 +5,15 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaNode, FaSass } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import {
-	SiBootstrap,
 	SiCss3,
 	SiHtml5,
 	SiJavascript,
   SiNextdotjs,
   SiMaterialui,
-	SiReact,
+  SiReact,
 	SiTailwindcss,
-	SiTypescript,
+  SiTypescript,
+  SiVuedotjs
 } from 'react-icons/si';
 import Tooltip from '@mui/material/Tooltip';
 import emailjs from 'emailjs-com';
@@ -92,11 +92,6 @@ export default function Home() {
 										<FaSass className={styles.bio_tech_icon} />
 									</span>
 								</Tooltip>
-								<Tooltip title="Bootstrap">
-									<span>
-										<SiBootstrap className={styles.bio_tech_icon} />
-									</span>
-								</Tooltip>
 								<Tooltip title="TailwindCSS">
 									<span>
 										<SiTailwindcss className={styles.bio_tech_icon} />
@@ -125,6 +120,11 @@ export default function Home() {
 								<Tooltip title="Next.JS">
 									<span>
 										<SiNextdotjs className={styles.bio_tech_icon} />
+									</span>
+								</Tooltip>
+								<Tooltip title="Vue.js">
+									<span>
+										<SiVuedotjs className={styles.bio_tech_icon} />
 									</span>
 								</Tooltip>
 								<Tooltip title="Node.JS">
@@ -161,17 +161,17 @@ export default function Home() {
 							techStack="NextJS, Sass, Material UI"
 						/>
 						<ProjectCard
-							appSummary="In an attempt to become more familiar with NextJS, I wanted to apply responsive design principles to create a multi-page artist portfolio; complete with a functioning contact page."
-							appTitle="Artist Portfolio"
-							linkDemo="https://next-template-xi.vercel.app/"
-							linkSource="https://github.com/ploymahloy/next-template"
-							techStack="NextJS, Sass"
+							appSummary="This project was a take-home assignment for my first role. I took it as an opportunity to try using Material UI. My favorite part is the logo change on smaller screens!"
+							appTitle="Order Form"
+							linkDemo="https://orderform-materialui.vercel.app/"
+							linkSource="https://github.com/ploymahloy/orderform-materialui"
+							techStack="React, Material UI"
 						/>
 						<ProjectCard
 							appSummary="This web app is meant to assist users of a project-based
-            company better organize their projects by deadline and job
-            type. Users are also able to add new work orders as well."
-							appTitle="Project Organizer"
+              company better organize their projects by deadline and job
+              type. Users are also able to add new work orders as well."
+              appTitle="Project Organizer"
 							linkDemo="https://ploymahloy.github.io/project-organizer/"
 							linkSource="https://github.com/ploymahloy/project-organizer"
 							techStack="React, Bootstrap"

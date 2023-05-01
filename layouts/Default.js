@@ -65,7 +65,8 @@ const Default = ({ children }) => {
 					<div className={styles.menu_underlay}>
 						<a
 							href="https://drive.google.com/file/d/1U79EpUeahaPozcDEsm-Z7O-9lCtr2C-q/view?usp=sharing"
-							download="Patrick_Mahloy_Resume.pdf"
+              download="Patrick_Mahloy_Resume.pdf"
+                target='blank'
 							className={styles.link}
 						>
 							Resume

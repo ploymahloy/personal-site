@@ -22,7 +22,7 @@ import Default from '../layouts/Default';
 import ProjectCard from '../components/ProjectCard';
 
 import styles from '../styles/Home.module.scss';
-import profilePic from '../public/headshot.png';
+import profilePic from '../public/profile.png';
 
 export default function Home() {
 	const form = useRef();
@@ -58,7 +58,7 @@ export default function Home() {
 								src={profilePic}
 								alt="Profile image"
 								width={300}
-								height={315}
+								height={305}
 								layout={'intrinsic'}
 							/>
 						</div>
@@ -112,12 +112,12 @@ export default function Home() {
 										<SiTypescript className={styles.bio_tech_icon} />
 									</span>
 								</Tooltip>
-								<Tooltip title="React.JS">
+								<Tooltip title="React.js">
 									<span>
 										<SiReact className={styles.bio_tech_icon} />
 									</span>
 								</Tooltip>
-								<Tooltip title="Next.JS">
+								<Tooltip title="Next.js">
 									<span>
 										<SiNextdotjs className={styles.bio_tech_icon} />
 									</span>
@@ -127,7 +127,7 @@ export default function Home() {
 										<SiVuedotjs className={styles.bio_tech_icon} />
 									</span>
 								</Tooltip>
-								<Tooltip title="Node.JS">
+								<Tooltip title="Node.js">
 									<span>
 										<FaNode className={styles.bio_tech_icon} />
 									</span>
@@ -142,7 +142,7 @@ export default function Home() {
 						<ProjectCard
 							appSummary="I use Google Keep almost every day between personal and professional use. I learned how to implement a masonry grid using pure CSS, among other layout techniques."
 							appTitle="Keep Clone"
-							linkDemo="https://keep-clone-f0u1cieio-ploymahloy.vercel.app"
+							linkDemo="https://keep-clone-delta.vercel.app/"
 							linkSource="https://github.com/ploymahloy/keep_clone"
 							techStack="React Typescript, Sass"
 						/>

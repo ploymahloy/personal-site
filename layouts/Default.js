@@ -8,13 +8,14 @@ import styles from '../styles/Default.module.scss';
 
 const LogoNoSSR = dynamic(() => import('../components/Logo'), { ssr: false });
 
+const resumeLink = "https://drive.google.com/file/d/1-a4qYNEgccmIGUTobT-9iGJ9y1qF2ID5/view?usp=sharing"
+
 const Default = ({ children }) => {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
 		<>
-      <div className={styles.menu}>
-        
+			<div className={styles.menu}>
 				{/* Logo */}
 				<LogoNoSSR />
 
@@ -41,8 +42,9 @@ const Default = ({ children }) => {
 						</div>
 						<div>
 							<a
-								href="../public/PMahloy_Resume_2023.pdf"
-								download='Isaac_Moreno_Resume.pdf'
+								href={resumeLink}
+                download="Patrick_Mahloy_Resume.pdf"
+                target="blank"
 								className={styles.sidenav_menu_link}
 							>
 								Resume
@@ -64,9 +66,9 @@ const Default = ({ children }) => {
 					</div>
 					<div className={styles.menu_underlay}>
 						<a
-							href="https://drive.google.com/file/d/1U79EpUeahaPozcDEsm-Z7O-9lCtr2C-q/view?usp=sharing"
-              download="Patrick_Mahloy_Resume.pdf"
-                target='blank'
+							href={resumeLink}
+							download="Patrick_Mahloy_Resume.pdf"
+							target="blank"
 							className={styles.link}
 						>
 							Resume

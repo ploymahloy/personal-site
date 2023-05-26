@@ -8,7 +8,7 @@ import styles from '../styles/Default.module.scss';
 
 const LogoNoSSR = dynamic(() => import('../components/Logo'), { ssr: false });
 
-const resumeLink = "https://drive.google.com/file/d/1-a4qYNEgccmIGUTobT-9iGJ9y1qF2ID5/view?usp=sharing"
+const resumeLink = "https://drive.google.com/file/d/19AUBk0H4R155CVbfZfrY_U6omnpshsWU/view?usp=sharing"
 
 const Default = ({ children }) => {
 	const [isActive, setIsActive] = useState(false);
